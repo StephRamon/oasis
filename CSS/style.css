@@ -176,6 +176,7 @@ body {
 	.presentations_activites ul {
 		display: table;
 		width: 100%;
+		padding: 0;
 	}
 
 	.presentations_activites ul li {
@@ -348,6 +349,7 @@ body {
 			color: #333;
 			background-color: #eaead9;
 			position: relative;
+			padding: 0;
 		}
 
 		.social input[type="mail"] {
