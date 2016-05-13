@@ -1,11 +1,15 @@
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Lato', sans-serif;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+}
 
 .container{
 	width: 100%;
@@ -14,8 +18,12 @@ body {
 }
 
 .clearfix:after {
-	content: "";
-	clear: both;
+	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
 }
 
 
@@ -24,16 +32,18 @@ body {
 /* ------------------------ MENU ------------------------ */
 
 	.menu{
-		background-color: white;
-		font-family: 'Lato', sans-serif;
-		text-transform: uppercase;
-		color: #333;
-		font-size: 0.875em;
-		height: 111px;
-		width: 100;
-	    -moz-box-shadow: 0px -9px 15px #000000;
-	    -webkit-box-shadow: 0px -9px 15px #000000;
-	    box-shadow: 0px -9px 15px #000000;
+	position: relative;
+	/*position: fixed;*/
+	background-color: white;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color: #333;
+	font-size: 0.875em;
+	width: 100%;
+	-moz-box-shadow: 0px -9px 15px #000000;
+	-webkit-box-shadow: 0px -9px 15px #000000;
+	box-shadow: 0px -9px 15px #000000;
+	z-index: 999px;
 	}
 
 	/*MENU SECONDAIRE*/
@@ -41,11 +51,18 @@ body {
 		.menu_secondaire{
 			height: 30px;
 			background-color: #00893a;
-			position: relative;
-			top: -14px;
+			z-index: 900;
+			
+		}
+
+		.menu_secondaire p {
+			display: inline-block;
 		}
 
 		.menu_secondaire_phone a{
+			position: absolute;
+			top: 0;
+			right: 0;
 			width: 192px;
 			height: 30px;
 			background-color: #fcedc8;
@@ -54,34 +71,34 @@ body {
 			color: #333333;
 			text-decoration: none;
 			line-height: 30px;
-			position: absolute;
-			top: 0px;
-			right: 0px;
-			z-index: 900;
+			/*z-index: 900;*/
+			margin: 0;
 		}
 
 		.menu_secondaire_mail{
 			position: absolute;
-			top: -14px;
-			right: 192px;
+			right: 0;
 			width: 236px;
 			height: 30px;
 			background: #ccd500 url(../images/mail.png);
 			background-repeat: no-repeat;
-			z-index: 902;
+			/*z-index: 902;*/
+			margin: 0;
+			margin-right: 190px;
 		}
 
 		.menu_secondaire i{
+			display: inline-block;
 			position: absolute;
-			height: 28px;
-			width: 28px;
-			top: 0px;
-			border: 1px solid #333;
+			top: 0;
+			height: 30px;
+			width: 30px;
 			border-radius: 15px;
 			background-color: #333;
 			color: #fcedc8;
 			text-align: center;
-			line-height: 28px;
+			line-height: 30px;
+			margin: 0;
 		}
 
 		.fa-envelope-o{
@@ -90,8 +107,8 @@ body {
 		}
 
 		.fa-phone{
-			z-index: 902;
 			right: 177px;
+			z-index: 902;
 		}
 
 	/*MENU PRINCIPAL*/
@@ -103,8 +120,7 @@ body {
 		.menu h1{
 			height: 85px;
 			width: 70px;
-			margin-top: -9px;/**?????*/
-			margin-left: 65px;
+			margin: 0 0 0 65px;
 			float:left;
 		}
 		.menu_principal{
@@ -172,7 +188,6 @@ body {
 		.sous_menu{
 			display: none;
 		}
-
 
 /* ------------------------ HEADER / SLIDER ------------------------ */
 
@@ -537,6 +552,120 @@ body {
 
 	.articles_container article:nth-child(6) {
 		background-image: url(../images/fromage-min.jpg);
+	}
+
+/* ------------------------ ARTICLE ------------------------ */
+
+	.article_container {
+		margin: 0 0 100px 0;
+	}
+
+	.photo_block{
+		display: inline-block;
+		background-image: url(../images/atelier_fromage_article.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 50%;
+		height: 668px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.titre_article{
+		display: inline-block;
+		background-color: rgba(255,255,255,0.7);
+		margin:  35% auto;
+		width: 100%;
+	}
+
+	.titre_article h3{
+		padding-top: 40px;
+		font-size: 1.563em;
+		color: #333;
+	}
+
+	.titre_article p{
+		display: inline-block;
+		padding: 8px 10px 8px 10px;
+		background-color: #00893a;
+		color: #fff;
+	}
+
+	.titre_article p:last-child{
+		margin-bottom: 40px;
+	}
+
+	.titre_article a p{
+		background-color: #ccd500;
+		color: #333;
+	}
+
+	.titre_article a p:hover{
+		text-decoration: underline;
+	}
+
+	.text_block{
+		display: inline-block;
+		float: right;
+		width: 49%;
+		height: 668px;
+		background-color: #fff;
+		overflow: scroll;
+		padding: 70px;
+		text-align: justify;
+		hyphens: auto;
+	}
+
+	.photo_block p {
+		margin: 0;
+	}
+
+
+	.share {
+		text-align: center;
+	}
+
+	.share span a {
+		text-decoration: none;
+	}
+
+	.share p {
+		position: relative;
+		display: inline-block;
+		background-color: #C3C3C3;
+		height: 30px;
+		border-radius: 15px;
+		line-height: 30px;
+		padding: 0 15px 0 15px;
+		z-index: 810;
+		text-transform: uppercase;
+	}
+
+	.share .fa {
+		position: relative;
+		color: #fff;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 0 15px 15px 0;
+		font-size: 1.1em;
+	}
+
+	.share .fa-facebook {
+		background-color: #3B5A94;
+		left: -25px;
+		padding: 0 15px 0 30px;
+		z-index: 805;
+	}
+
+	.share .fa-twitter {
+		background-color: #4FADE9;
+		left: -50px;
+		padding: 0 10px 0 30px;
+		z-index: 800;
+	}
+
+	.fa-share-alt {
+		padding-right: 15px;
 	}
 
 /* ------------------------ FOOTER ------------------------ */
