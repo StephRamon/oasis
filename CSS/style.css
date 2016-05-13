@@ -3,8 +3,9 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
-
 }
+
+
 
 .container{
 	width: 100%;
@@ -12,20 +13,29 @@ body {
 	margin: 0 auto;
 }
 
-.menu{
-	background-color: white;
-	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
-	color: #333;
-	font-size: 0.875em;
-	height: 111px;
-	width: 100;
-    -moz-box-shadow: 0px -9px 15px #000000;
-    -webkit-box-shadow: 0px -9px 15px #000000;
-    box-shadow: 0px -9px 15px #000000;
+.clearfix:after {
+	content: "";
+	clear: both;
 }
 
-/*MENU*/
+
+
+
+/* ------------------------ MENU ------------------------ */
+
+	.menu{
+		background-color: white;
+		font-family: 'Lato', sans-serif;
+		text-transform: uppercase;
+		color: #333;
+		font-size: 0.875em;
+		height: 111px;
+		width: 100;
+	    -moz-box-shadow: 0px -9px 15px #000000;
+	    -webkit-box-shadow: 0px -9px 15px #000000;
+	    box-shadow: 0px -9px 15px #000000;
+	}
+
 	/*MENU SECONDAIRE*/
 
 		.menu_secondaire{
@@ -166,137 +176,142 @@ body {
 
 /* ------------------------ HEADER / SLIDER ------------------------ */
 
-header {
-	background-image: url(../images/pommevert.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 600px;
-	text-align: center;
-	margin-bottom: 80px;
-}
+	header {
+		background-image: url(../images/pommevert.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 600px;
+		text-align: center;
+		margin-bottom: 80px;
+	}
 
-header h3 {
-	font-size: 45px;
-	color: #fff;
-	text-transform: uppercase;
-	width: 65%;
-	margin: auto;
-	padding: 100px 0 30px 0;
-	text-shadow: -2px 4px 20px #333;
-}
+	header h3 {
+		font-size: 45px;
+		color: #fff;
+		text-transform: uppercase;
+		width: 65%;
+		margin: auto;
+		padding: 100px 0 30px 0;
+		text-shadow: -2px 4px 20px #333;
+	}
 
-.description_activites {
-	background-color: rgba(255, 255, 255, 0.7);
-	width: 40%;
-	min-width: 300px;
-	margin: auto;
-	/*padding: 5px 50px 20px 50px;*/
-}
+	.description_activites {
+		background-color: rgba(255, 255, 255, 0.7);
+		width: 40%;
+		min-width: 300px;
+		margin: auto;
+		/*padding: 5px 50px 20px 50px;*/
+	}
 
-.description_activites p:first-child {
-	background-color: rgba(255, 255, 255, 0.7);
-	text-transform: uppercase;
-	font-weight: bold;
-	padding: 15px ;
-}
+	.description_activites p:first-child {
+		background-color: rgba(255, 255, 255, 0.7);
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 15px ;
+	}
 
-.description_activites p:nth-child(2) {
-	text-align: justify;
-	padding: 0 50px 20px 50px;
-}
+	.description_activites p:nth-child(2) {
+		text-align: justify;
+		padding: 0 50px 20px 50px;
+	}
 
-.cta_inscrire {
-	position: relative;
-	top: -25px;
-	background-color: #ccd500;
-	height: 30px;
-	padding: 5px 25px 5px 25px;
-	border-radius: 15px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-}
+	.cta_inscrire {
+		position: relative;
+		top: -25px;
+		background-color: #ccd500;
+		height: 30px;
+		padding: 5px 25px 5px 25px;
+		border-radius: 15px;
+	}
 
-.cta_inscrire a {
-	color: #fff;
-	text-decoration: none;
-	text-transform: uppercase;
-}
+	.cta_inscrire a {
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
 
-.cta_inscrire:hover{
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
-}
+	.cta_inscrire:hover{
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+	}
 
-.before_next span a {
-	display: inline-block;
-	position: absolute;
-	width: 80px;
-	height: 80px;
-	line-height: 80px;
-	border: 3px solid #fff;
-	border-radius: 40px;
-	color: #fff;
-	font-size: 60px;
-	background-color: rgba(0, 0, 0, 0.2);
-	top: 400px;
-}
+	.before_next span a {
+		display: inline-block;
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		border: 3px solid #fff;
+		border-radius: 40px;
+		color: #fff;
+		font-size: 60px;
+		background-color: rgba(0, 0, 0, 0.2);
+		top: 400px;
+	}
 
-.before_next .before_arrow a {
-	left: 20px;
-}
+	.before_next .before_arrow a {
+		left: 20px;
+	}
 
-.before_next .next_arrow a {
-	right: 20px;
-}
+	.before_next .next_arrow a {
+		right: 20px;
+	}
 
-.before_arrow i {
-	padding-right: 6px;
-}
+	.before_arrow i {
+		padding-right: 6px;
+	}
 
-.next_arrow i {
-	padding-left: 6px;
-}
+	.next_arrow i {
+		padding-left: 6px;
+	}
 
-.slider_nav {
-	display: inline-block;
-	position: relative;
-	bottom: -140px;
-	margin: auto;
-	margin: 0;
-	padding: 0;
-}
+	.slider_nav {
+		display: inline-block;
+		position: relative;
+		bottom: -120px;
+		margin: auto;
+		margin: 0;
+		padding: 0;
+	}
 
-.slider_nav li {
-	display: inline-block;
-}
+	.slider_nav li {
+		display: inline-block;
+	}
 
-.slider_nav li a {
-	display: block;
-	width: 8px;
-	height: 8px;
-	border-radius: 4px;
-	border: 1px solid #333;
-	background-color: rgba(0, 0, 0, 0.1);
-}
+	.slider_nav li a {
+		display: block;
+		width: 8px;
+		height: 8px;
+		border-radius: 4px;
+		border: 1px solid #333;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
 
-.slider_nav li a:hover {
-	background-color: rgba(255, 255, 255, 0.8);
-}
+	.slider_nav li a:hover {
+		background-color: rgba(255, 255, 255, 0.8);
+	}
 
-.slider_nav li a:active {
-	background-color: rgba(255, 255, 255, 0.8);
-}
-
-
+	.slider_nav li a:active {
+		background-color: rgba(255, 255, 255, 0.8);
+	}
 
 /* ------------------------ ACTIVITES ------------------------ */
 
 	.presentations_activites h1 {
+		font-size: 34px;
 		text-align: center;
 		text-transform: uppercase;
-		box-shadow: 0px 24px 4px -24px #ccd500;
-		width: 400px;
 		margin: auto;
 		padding-bottom: 20px;
+	}
+
+	.presentations_activites h1:after {
+		display: block;
+		content: "";
+		border-bottom: 2px solid #ccd500;
+		width: 375px;
+		padding-bottom: 40px;
+		margin: auto;
 	}
 
 	.presentations_activites ul {
@@ -325,85 +340,204 @@ header h3 {
 		text-decoration: none;
 	}
 
-	/* -------- Icônes -------- */
+			/* -------- Icônes -------- */
 
 
-		.presentations_activites ul li a:nth-child(2) {
-			display: block;
-			border-radius: 113px;
-			width: 228px;
-			height: 227px;
-			margin-bottom: 50px;
-		}
+	.presentations_activites ul li a:nth-child(2) {
+		display: block;
+		border-radius: 113px;
+		width: 228px;
+		height: 227px;
+		margin-bottom: 50px;
+	}
 
-		.presentations_activites ul li:first-child a:nth-child(2){
-			background-image: url(../images/icons/icons_activites.png);
-			background-repeat: no-repeat;
-			background-position: 0 0;
-		/*	background-color: #00893a;
-		*/}
+	.presentations_activites ul li:first-child a:nth-child(2){
+		background-image: url(../images/icons/icons_activites.png);
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	/*	background-color: #00893a;
+	*/}
 
-		.presentations_activites ul li:nth-child(2) a:nth-child(2){
-			background-image: url(../images/icons/icons_activites.png);
-			background-repeat: no-repeat;
-			background-position: -227px 0;
-		/*	background-color: #ccd500;
-		*/}
+	.presentations_activites ul li:nth-child(2) a:nth-child(2){
+		background-image: url(../images/icons/icons_activites.png);
+		background-repeat: no-repeat;
+		background-position: -227px 0;
+	/*	background-color: #ccd500;
+	*/}
 
-		.presentations_activites ul li:nth-child(3) a:nth-child(2){
-			background-image: url(../images/icons/icons_activites.png);
-			background-repeat: no-repeat;
-			background-position: -454px 0;
-		/*	background-color: #fcedc8;
-		*/}
+	.presentations_activites ul li:nth-child(3) a:nth-child(2){
+		background-image: url(../images/icons/icons_activites.png);
+		background-repeat: no-repeat;
+		background-position: -454px 0;
+	/*	background-color: #fcedc8;
+	*/}
 
-		.presentations_activites ul li:nth-child(4) a:nth-child(2){
-			background-image: url(../images/icons/icons_activites.png);
-			background-repeat: no-repeat;
-			background-position: -681px 0;
-		/*	background-color: #dcccb9;
-		*/}
+	.presentations_activites ul li:nth-child(4) a:nth-child(2){
+		background-image: url(../images/icons/icons_activites.png);
+		background-repeat: no-repeat;
+		background-position: -681px 0;
+	/*	background-color: #dcccb9;
+	*/}
 
-		.presentations_activites ul li p {
-			height: 110px;
-			text-align: justify;
-			-webkit-hyphens: auto;
-		   	-moz-hyphens: auto;
-		   	-ms-hyphens: auto;
-		   	hyphens: auto;
-		}
-
-	/* -------- Séparations -------- */
-
-		.presentations_activites ul li:first-child p {
-			border-bottom: 2px solid #00893a;
-		}
-
-		.presentations_activites ul li:nth-child(2) p {
-			border-bottom: 2px solid #ccd500;
-		}
-
-		.presentations_activites ul li:nth-child(3) p {
-			border-bottom: 2px solid #fcedc8;
-		}
-
-		.presentations_activites ul li:nth-child(4) p {
-			border-bottom: 2px solid #dcccb9;
-		}
-
-	/* -------- En savoir plus -------- */
-
-		.presentations_activites i ~ a {
-			color: #333;
-			padding-left: 30px;
-		}
-
-		.presentations_activites i ~ a:hover {
-			color: #333;
-
-		}
+	.presentations_activites ul li p {
+		height: 110px;
+		text-align: justify;
+		-webkit-hyphens: auto;
+	   	-moz-hyphens: auto;
+	   	-ms-hyphens: auto;
+	   	hyphens: auto;
+	}
 
 
+			/* -------- Séparations -------- */
+
+	.presentations_activites ul li:first-child p {
+		border-bottom: 2px solid #00893a;
+	}
+
+	.presentations_activites ul li:nth-child(2) p {
+		border-bottom: 2px solid #ccd500;
+	}
+
+	.presentations_activites ul li:nth-child(3) p {
+		border-bottom: 2px solid #fcedc8;
+	}
+
+	.presentations_activites ul li:nth-child(4) p {
+		border-bottom: 2px solid #dcccb9;
+	}
+
+			/* -------- En savoir plus -------- */
+
+	.presentations_activites i ~ a {
+		color: #333;
+		padding-left: 30px;
+	}
+
+	.presentations_activites i ~ a:hover {
+		color: #333;
+
+	}
+
+/* ------------------------ PROCHAINES ACTIVITES ------------------------ */
+
+	.activites_container {
+		/*display: table;*/
+		width: 93.7%;
+		background-color: #f5f5f5;
+		border-top: 1px solid #b7b7b7;
+		border-bottom: 1px solid #b7b7b7;
+		margin: auto;
+		margin-bottom: 100px;
+		padding: 40px;
+	}
+
+	.activites_container span {
+		display: inline-block;
+		float: left;
+		height: 30px;
+		line-height: 30px;
+		background-color: #ccd500;
+		border-radius: 15px;
+		padding: 0 15px;
+		color: #fff;
+		margin-right: 10px;
+	}
+
+	.activites_container .filtre_dates {
+		float: right;
+		background-color: #c3c3c3;
+		margin-right: 0;
+	}
+	.prochaines_activites {
+		margin-top: 150px;
+	}
+
+	.prochaines_activites h3 {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 24px;
+		margin-bottom: 100px;
+	}
+
+	.prochaines_activites h3:after {
+		display: block;
+		content: "";
+		border-bottom: 2px solid #ccd500;
+		width: 375px;
+		padding-bottom: 40px;
+		margin: auto;
+	}
+
+	.prochaines_activites a h4 {
+		text-transform: none;
+		font-size: 18px;
+		text-decoration: none;
+		margin: 15px;
+	}
+
+	.activites_container i {
+		padding-left: 20px;
+		color: #333;
+	}
+
+	.articles_container article {
+		display: inline-block;
+		width: 32.2%;
+		height: 240px;
+		/*background-color: #ccd500;*/
+		margin: 20px 5px 20px 5px;
+	}
+
+	.prochaines_activites article a {
+		display: inline-block;
+		height: 100px;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: #fff;
+		text-decoration: none;
+		margin: 70px 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.date_activite {
+		position: relative;
+		bottom: 30px;
+		background-color: #00893a;
+		text-align: right;
+		padding-right: 10px;
+		margin: 0 0 0 50%;
+		height: 30px;
+		line-height: 30px;
+	}
+
+	.articles_container {
+		margin-top: 50px;
+	}
+
+	.articles_container article:first-child {
+		background-image: url(../images/potiron-min.jpg);
+	}
+
+	.articles_container article:nth-child(2) {
+		background-image: url(../images/vins-min.jpg);
+	}
+
+	.articles_container article:nth-child(3) {
+		background-color: #ccd500;
+	}
+
+	.articles_container article:nth-child(4) {
+		background-image: url(../images/pain-min.jpg);
+	}
+
+	.articles_container article:nth-child(5) {
+		background-image: url(../images/toilettes-min.jpg);
+	}
+
+	.articles_container article:nth-child(6) {
+		background-image: url(../images/fromage-min.jpg);
+	}
 
 /* ------------------------ FOOTER ------------------------ */
 
