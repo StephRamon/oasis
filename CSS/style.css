@@ -95,7 +95,7 @@ body {
 			width: 30px;
 			border-radius: 15px;
 			background-color: #333;
-			color: #fcedc8;
+			color: #fff;
 			text-align: center;
 			line-height: 30px;
 			margin: 0;
@@ -255,7 +255,7 @@ body {
 		position: absolute;
 		width: 80px;
 		height: 80px;
-		line-height: 80px;
+		line-height: 70px;
 		border: 3px solid #fff;
 		border-radius: 40px;
 		color: #fff;
@@ -722,6 +722,10 @@ body {
 			text-decoration: none;
 			color: #eaead9;
 			line-height: 35px;
+		}
+
+		.menu_footer a:hover {
+			color: #ccd500;
 		}
 
 
