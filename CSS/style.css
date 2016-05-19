@@ -871,13 +871,13 @@ body {
 		margin: 0 auto;
 	}
 
-	article{
+	.liste_articles article{
 		width: 100%;
 		margin-bottom: 20px;
 		text-align: center;
 	}
 
-	article:hover{
+	.liste_articles article:hover{
 		background-color: #f3f2f2;
 	}
 
