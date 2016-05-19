@@ -1131,14 +1131,28 @@ body {
 		position: relative;
 	}
 
-
+	#EcocentreOasis {
+        height:450px;
+        width:100%;
+    }
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
 
 	.infos{
 		font-family: 'Lato', sans-serif;
 		color: #333;
 		position: absolute;
 		width: 400px;
-		height: 370px;
+		height: 400px;
 		background-color: rgba(255,255,255,0.8);
 		top: 25px;
 		right: 200px;
@@ -1159,6 +1173,46 @@ body {
 		color: #333;
 		text-decoration: underline;
 	}
+
+	.infos ul {
+		padding: 0;
+	}
+	.infos ul li {
+		display: inline-block;
+		margin: 2px 2px 20px 2px;
+	}
+
+	.infos ul li a {
+		display: block;
+		width: 47px;
+		height: 47px;
+	}
+
+	.infos ul li:first-child {
+		background-image: url(../images/icons/icons_infos.png);
+		background-repeat: no-repeat;
+		background-position: 0 -47px;
+	}
+
+	.infos ul li:nth-child(2) {
+		background-image: url(../images/icons/icons_infos.png);
+		background-repeat: no-repeat;
+		background-position: -47px -47px;
+	}
+		
+	.infos ul li:first-child:hover {
+		background-image: url(../images/icons/icons_infos.png);
+		background-repeat: no-repeat;
+		background-position: 0 0px;
+	}
+
+	.infos ul li:nth-child(2):hover {
+		background-image: url(../images/icons/icons_infos.png);
+		background-repeat: no-repeat;
+		background-position: -47px 0px;
+	}
+
+
 
 	.formulaire{
 		width: 900px;
@@ -1191,10 +1245,15 @@ body {
 		margin: 0 auto;
 	}
 
-	.formulaire form input, textarea{
+	.formulaire form input, textarea, select{
 		width: 750px;
 		height: 40px;
 		margin-bottom: 20px;
+	}
+
+	.formulaire select, textarea{
+		border: none;
+
 	}
 
 	.formulaire form textarea{
