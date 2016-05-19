@@ -115,6 +115,7 @@ body {
 			nav{
 				height: 81px;
 				background-color: white;
+				padding-top: 10px;
 			}
 
 			.menu h1{
@@ -130,12 +131,12 @@ body {
 
 			.fa-search{
 				float: right;
-				margin-top: 25px;
+				margin-top: 35px;
 				margin-right: 42px;
 				cursor: pointer;
 			}
 
-			.headform{
+			/*.headform{
 				display: none;
 				margin-top: 15px;
 				width:200px;
@@ -163,7 +164,7 @@ body {
 				background-color:  #ccd500;
 				border: 1px solid #ccd500;
 				color: #333333;
-			}
+			}*/
 
 			nav ul{
 				margin-top: 23px;
