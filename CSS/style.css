@@ -302,7 +302,7 @@ body {
 		.slider_nav {
 			display: inline-block;
 			position: relative;
-			bottom: -80px;
+			bottom: -30px;
 			margin: auto;
 			margin: 0;
 			padding: 0;
@@ -322,7 +322,7 @@ body {
 		}
 
 		.slider_nav li a:hover {
-			background-color: rgba(255, 255, 255, 0.8);
+			background-color: rgba(255, 255, 255, 0.5);
 		}
 
 		.slider_nav li a:active {
