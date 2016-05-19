@@ -283,7 +283,7 @@ body {
 	.slider_nav {
 		display: inline-block;
 		position: relative;
-		bottom: -120px;
+		bottom: -80px;
 		margin: auto;
 		margin: 0;
 		padding: 0;
@@ -308,6 +308,85 @@ body {
 
 	.slider_nav li a:active {
 		background-color: rgba(255, 255, 255, 0.8);
+	}
+
+/* ------------------------ AGENDA ------------------------ */
+
+	.calendar {
+		padding: 50px;
+	}
+
+	.calendar table {
+		border-collapse: separate;
+		width: 100%;
+	}
+
+	.calendar caption {
+		text-align: left;
+	}
+
+	.calendar caption a {
+		display: inline-block;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 15px;
+		padding: 0 15px 0 15px;
+		background-color: #ccd500;
+		text-decoration: none;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	.calendar th, td {
+		height: 80px;
+	}
+
+	.calendar td {
+		background-color: #F3F2F2;
+		border: 2px solid #fff;
+		width: 14.2%;
+		text-align: right;
+		vertical-align: top;
+		padding: 5px;
+	}
+
+	.calendar td span {
+		text-align: right;
+	}
+
+	.calendar article figure {
+		float: left;
+	}
+
+	.calendar .text_resume {
+		float: right;
+		width: 60%;
+		padding: 0 60px;
+		text-align: center;
+	}
+
+	.text_resume a {
+		display: inline-block;
+		background-color: #ccd500;
+		padding: 0 15px;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 15px;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.text_resume i {
+		color: #333;
+		padding-right: 15px;
+	}
+
+	.text_resume:nth-child(3) {
+		text-align: left;
+	}
+
+	.calendar article {
+		margin: 50px auto;
 	}
 
 /* ------------------------ ACTIVITES ------------------------ */
