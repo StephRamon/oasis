@@ -29,7 +29,7 @@ body {
 
 /* ------------------------ ACCUEIL ------------------------ */
 
-	/* ------------------------ MENU / HEADER ------------------------ */
+	/* ------------------------ HEADER ------------------------ */
 
 		.menu{
 		position: relative;
@@ -189,9 +189,9 @@ body {
 				display: none;
 			}
 
-	/* ------------------------ HEADER / SLIDER ------------------------ */
+	/* ------------------------ SLIDER ------------------------ */
 
-		header {
+		.slider {
 			background-image: url(../images/pommevert.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -201,7 +201,7 @@ body {
 			margin-bottom: 80px;
 		}
 
-		header h3 {
+		.slider h3 {
 			font-size: 45px;
 			color: #fff;
 			text-transform: uppercase;
