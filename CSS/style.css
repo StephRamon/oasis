@@ -141,32 +141,18 @@ body {
 
 			.headform{
 				display: none;
-				margin-top: 15px;
-				width:200px;
-				float:right;
+				position: absolute;
+				margin-top: 25px;
+				width:150px;
+				right: 66px;
 			}
-
 			.headform input{
-				width: 90px;
-				height: 25px;
-				border: 1px solid #333;
-				border-radius: 15px;
-			}
-
-			.headform input:last-child{
-				right: 40px;
-				background-color: white;
-				border: 1px solid #ccd500;
-				color: #ccd500;
-				width: 90px;
-				height: 30px;
-				font-weight: bold;
-			}
-
-			.headform input:last-child:hover{
-				background-color:  #ccd500;
-				border: 1px solid #ccd500;
-				color: #333333;
+				padding-left: 10px;
+				width: 150px;
+				height: 37px;
+				background-color: #f5f5f5;
+				border: 1px solid #f5f5f5 !important;
+				border-radius: 17.5px;
 			}
 
 			nav ul{
