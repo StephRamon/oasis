@@ -880,6 +880,8 @@ body {
 		margin: 50px auto;
 	}
 
+
+
 /* ------------------------ ACTIVITES ------------------------ */
 
 	.description{
@@ -942,7 +944,7 @@ body {
 	}
 
 	.blogsidebar {
-		top: 115px;
+		top: 135px;
 	}
 
 	/*ARTICLES*/
@@ -1163,6 +1165,12 @@ body {
 
 	.bouton_inscription:hover {
 		text-decoration: underline;
+	}
+
+/* ------------------------ NEWS ------------------------ */
+
+	.blogliste_articles {
+		margin-top: 20px;
 	}
 
 /* ------------------------ À PROPOS ------------------------ */
