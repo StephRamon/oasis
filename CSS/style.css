@@ -890,9 +890,9 @@ body {
 
 	.sidebar{
 		position: absolute;
-		top: 537px;
+		top: 536px;
 		left: 0px;
-		background-color: white;
+		background-color: rgba(255, 255, 255, 0.9);
 		padding-right: 20px;
 	}
 	.sidebar p{
@@ -918,6 +918,9 @@ body {
 		text-decoration: none;
 	}
 
+	.blogsidebar {
+		top: 115px;
+	}
 
 	/*ARTICLES*/
 
