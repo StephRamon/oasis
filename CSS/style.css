@@ -2,6 +2,8 @@
 html {
   box-sizing: border-box;
 }
+
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -916,6 +918,18 @@ body {
 		color: #ccd500;
 		font-size: 1em;
 		text-decoration: none;
+	}
+
+	.sidebar span{
+		cursor: pointer;
+		position: absolute;
+		color: #333;
+		/*background-color: rgba(255, 255, 255, 0.9);*/
+		top: 15px;
+		right: 5px;
+	}
+	.sidebar span i{
+		font-size: 2em;
 	}
 
 	.blogsidebar {
