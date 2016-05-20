@@ -842,6 +842,15 @@ body {
 		text-align: center;
 	}
 
+	.text_resume h3 {
+		margin: 0;
+		border: none;
+	}
+
+	.text_resume p:first-child {
+		text-align: center;
+	}
+
 	.text_resume a {
 		display: inline-block;
 		background-color: #ccd500;
