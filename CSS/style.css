@@ -29,6 +29,11 @@ body {
     height: 0;
 }
 
+.presentations_activites, .prochaines_activites{
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
 
 /* ------------------------ ACCUEIL ------------------------ */
 
@@ -357,6 +362,7 @@ body {
 		.presentations_activites ul li h2 {
 			text-align: center;
 			font-variant: small-caps;
+			height: 50px;
 		}
 
 		.presentations_activites ul li a {
@@ -474,7 +480,7 @@ body {
 			border-radius: 15px;
 			padding: 0 15px;
 			color: #fff;
-			margin-right: 10px;
+			margin-right: 0.2%;
 		}
 
 		.activites_container .filtre_dates {
@@ -519,7 +525,11 @@ body {
 			width: 32.2%;
 			height: 240px;
 			/*background-color: #ccd500;*/
-			margin: 20px 5px 20px 5px;
+			margin: 20px 1% 20px 0px;
+		}
+
+		.articles_container article:nth-child(3n) {
+			margin-right: 0;
 		}
 
 		.prochaines_activites article a {
@@ -550,6 +560,11 @@ body {
 
 		.articles_container {
 			margin-top: 50px;
+			background-color: red;
+		}
+
+		.articles_container article{
+			background-size: cover;
 		}
 
 		.articles_container article:first-child {
@@ -1319,7 +1334,8 @@ body {
 
 
 	.formulaire{
-		width: 900px;
+		width: 100%;
+		max-width: 1200px;
 		height: auto;
 		margin: 0 auto;
 		font-family: 'Lato', sans-serif;
@@ -1329,6 +1345,8 @@ body {
 	.formulaire form{
 		background-color: #ccd500;
 		padding: 50px 70px 20px 70px;
+		width: 70%;
+		margin: 0 auto;
 	}
 
 	.formulaire h3{
@@ -1350,7 +1368,7 @@ body {
 	}
 
 	.formulaire form input, textarea, select{
-		width: 750px;
+		width: 100%;
 		height: 40px;
 		margin-bottom: 20px;
 	}
@@ -1369,7 +1387,7 @@ body {
 		border: 0px;
 		border-radius: 20px;
 		width: 120px;
-		margin-left: 633px;
+		float: right;
 	}
 
 	.formulaire:after{
@@ -1380,6 +1398,75 @@ body {
 		background-image: url(../images/grand_logo.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
+		background-position: center;
 		margin-top: 20px;
-		margin-left: 163px;
 	}
+
+/* --------------------- MEDIA QUERIES --------------------- */
+
+		@media screen and (max-width: 1220px){
+			.articles_container article{
+				width: 47.2%;
+			}
+
+			.articles_container article:nth-child(3n) {
+			margin-right: 1%;
+			}
+		}
+
+			.articles_container article:nth-child(2n) {
+			margin-right: 0;
+			}
+		}
+
+
+		@media screen and (max-width: 1174px){
+			
+			.presentations_activites ul{
+				display: inline-block;
+			}
+
+			.presentations_activites ul li{
+				display: inline-block;
+				width: 49%;
+			}
+
+			.presentations_activites ul li:nth-child(2), .presentations_activites ul li:first-child{	
+				margin-bottom: 70px;
+			}
+		}
+
+	/*TABLETTE 768x1024*/
+
+		@media screen and (max-width: 768px){
+			.slider h3{
+				padding: 58px 0 30px 0;
+			}
+
+			.slider_nav{
+				display: none;
+			}
+
+			.prochaines_activites{
+				margin-top: 95px;
+			}
+
+			.prochaines_activites h3{
+				margin-bottom: 55px;
+			}
+
+			/*.articles_container article{
+				width: 47.2%;
+			}*/
+
+			.date_activite{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
+
+			.date_activite article p{
+				margin: 0;
+			}
+		}
+	
