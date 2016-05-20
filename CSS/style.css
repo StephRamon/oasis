@@ -803,7 +803,7 @@ body {
 	}
 
 	.calendar th, td {
-		height: 80px;
+		height: 40px;
 	}
 
 	.calendar td {
@@ -813,6 +813,16 @@ body {
 		text-align: right;
 		vertical-align: top;
 		padding: 5px;
+	}
+
+
+	.cell td {
+		border: none;
+	}
+
+	.cell tr:nth-child(2) a {
+		color: #ccd500;
+		text-decoration: none;
 	}
 
 	.calendar td span {
@@ -834,11 +844,16 @@ body {
 		display: inline-block;
 		background-color: #ccd500;
 		padding: 0 15px;
-		height: 30px;
-		line-height: 30px;
-		border-radius: 15px;
+		height: 35px;
+		line-height: 35px;
+		border-radius: 17px;
 		text-decoration: none;
 		color: #fff;
+	}
+
+	.text-resume a:hover {
+		height: 37px;
+		padding: 0 16px;
 	}
 
 	.text_resume i {
