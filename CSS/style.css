@@ -888,11 +888,60 @@ body {
 		font-size: 1.875em;
 	}
 
+	.sidebar{
+		position: absolute;
+		top: 537px;
+		left: 0px;
+		background-color: white;
+		padding-right: 20px;
+	}
+	.sidebar p{
+		font-weight: bold;
+		font-size: 1.125em;
+		text-transform: uppercase;
+		text-align: center;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #00893a;
+		margin: 0;
+	}
+	.sidebar ul{
+		list-style: none;
+	}
+	.sidebar ul li a{
+		color: #333;
+		font-size: 1em;
+		text-decoration: none;
+	}
+	.sidebar ul li a:hover{
+		color: #ccd500;
+		font-size: 1em;
+		text-decoration: none;
+	}
+
+
 	/*ARTICLES*/
 
 	.liste_articles{
 		max-width: 1069px;
 		margin: 0 auto;
+		position: relative;
+		left: 50px;
+	}
+	.plus_articles{
+		display: inline-block;
+		width: 100%;
+		height: 100px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #333;
+		text-align: center;
+		line-height: 54px;
+		font-size: 1.5em;
+		font-weight: bold;
+		margin: 60px 0 100px 0;
+	}
+	.plus_articles:hover{
+		background-color: #f3f2f2;
 	}
 
 	.liste_articles article{
@@ -1071,6 +1120,23 @@ body {
 
 	.fa-share-alt {
 		padding-right: 15px;
+	}
+
+	.bouton_inscription {
+		display: inline-block;
+		height: 30px;
+		line-height: 30px;
+		background-color: #ccd500;
+		border-radius: 15px;
+		padding: 0 15px;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.bouton_inscription:hover {
+		text-decoration: underline;
 	}
 
 /* ------------------------ À PROPOS ------------------------ */
