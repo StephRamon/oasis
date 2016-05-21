@@ -1485,7 +1485,7 @@ body {
 			}
 
 			.social {
-				top: -120px;
+				top: -130px;
 				width: 100%;
 			}
 
@@ -1501,5 +1501,20 @@ body {
 			}
 
 
+		}
+
+		@media screen and (max-width: 480px){
+
+			.menu_footer, .infos_ecocentre {
+				width: 100%;
+				top: 175px;
+
+			}
+
+			.infos_ecocentre {
+				position: initial;
+				/*top: 50px;*/
+				/*left: 0;*/
+			}
 		}
 	
