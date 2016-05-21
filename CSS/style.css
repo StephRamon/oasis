@@ -1412,6 +1412,9 @@ body {
 
 /* --------------------- MEDIA QUERIES --------------------- */
 
+
+	/*DESKTOP > 768x1024*/
+
 		@media screen and (max-width: 1220px){
 			.articles_container article{
 				width: 49.3%;
@@ -1455,6 +1458,7 @@ body {
 	/*TABLETTE 768x1024*/
 
 		@media screen and (max-width: 768px){
+
 			.slider h3{
 				padding: 58px 0 30px 0;
 			}
@@ -1471,14 +1475,31 @@ body {
 				margin-bottom: 55px;
 			}
 
-			/*.articles_container article{
-				width: 47.2%;
-			}*/
-
-			
-
 			.date_activite article p{
 				margin: 0;
 			}
+
+			.social, .menu_footer, .infos_ecocentre {
+				display: block;
+				position: relative;
+			}
+
+			.social {
+				top: -120px;
+				width: 100%;
+			}
+
+			.menu_footer {
+				top: 250px;
+				width: 50%;
+			}
+
+			.infos_ecocentre {
+				top: -70px;
+				width: 50%;
+				left: 47%;
+			}
+
+
 		}
 	
