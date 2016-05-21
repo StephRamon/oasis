@@ -623,7 +623,7 @@ body {
 
 			.menu_footer, .social, .infos_ecocentre {
 				display: inline-block;
-				width: 33%;
+				width: 31%;
 				text-align: center;
 				color: #eaead9;
 			}
@@ -687,6 +687,7 @@ body {
 				left: 25px;
 				width: 60%;
 				min-width: 150px;
+				max-width: 230px;
 			}
 
 			.social input[type="submit"] {
@@ -695,6 +696,7 @@ body {
 				right: 15px;
 				width: 38%;
 				min-width: 98px;
+				max-width: 150px;
 			}
 
 			.social ul li {
