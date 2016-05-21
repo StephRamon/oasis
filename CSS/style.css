@@ -467,7 +467,6 @@ body {
 	/* ------------------------ PROCHAINES ACTIVITES ------------------------ */
 
 		.activites_container {
-			/*display: table;*/
 			width: 93.7%;
 			background-color: #f5f5f5;
 			border-top: 1px solid #b7b7b7;
@@ -613,19 +612,10 @@ body {
 		footer:before {
 			display: block;
 			content: "";
-			/*border-bottom: 2px solid #ccd500;*/
 			width: 100%;
 			height: 136px;
-			/*padding-bottom: 40px;*/
 			background-image: url(../images/insta.jpg);
 
-		}
-
-		.insta {
-			height: 135px;
-			width: 100%;
-			background-image: url(../images/insta.jpg);
-			margin-bottom: 20px;
 		}
 
 		/* -------- Menu Footer -------- */
@@ -636,6 +626,10 @@ body {
 				width: 33%;
 				text-align: center;
 				color: #eaead9;
+			}
+
+			.social {
+				width: 36%;
 			}
 
 			.copyright {
@@ -679,28 +673,28 @@ body {
 			}
 
 			.social input {
+				position: relative;
 				height: 30px;
 				border: none;
 				color: #333;
 				background-color: #eaead9;
-				position: relative;
 				padding: 0;
 			}
 
 			.social input[type="mail"] {
 				border-radius: 15px 0 0 15px;
 				padding-left: 15px;
-				left: 30px;
+				left: 25px;
 				width: 60%;
-				min-width: 200px;
+				min-width: 150px;
 			}
 
 			.social input[type="submit"] {
 				background-color: #ccd500;
 				border-radius: 15px;
 				right: 15px;
-				width: 30%;
-				min-width: 88px;
+				width: 38%;
+				min-width: 98px;
 			}
 
 			.social ul li {
@@ -777,23 +771,18 @@ body {
 
 		/* -------- Infos -------- */
 
-			.infos_ecocentre p:nth-child(3) {
-				margin-bottom: 0;
-			}
-
-			.infos_ecocentre p:last-child {
-				border-bottom: 1px solid #ccd500;
-				padding: 0;
-				margin: 0;
-				width: 150px;
-				padding-bottom: 20px;
-				margin: auto;
-			}
-
-
 			.infos_ecocentre p:first-child {
 				color: #ccd500;
 				text-transform: uppercase;
+			}
+
+			.infos_ecocentre:after {
+				display: block;
+				content: "";
+				border-bottom: 2px solid #ccd500;
+				width: 70px;
+				margin: auto;
+
 			}
 
 
