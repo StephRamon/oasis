@@ -191,17 +191,17 @@ body {
 			text-align: center;
 			/*padding-top: 7px;*/
 			line-height: 35px;
-		}
-		nav ul li:last-child a:hover{
-			color: white;
-			padding-bottom: 0px;
-			border-bottom: 0px solid #ccd500;
-			background-color: rgba(239, 85, 9, 0.5);
-		}
-
-			.sous_menu{
-				display: none;
 			}
+			nav ul li:last-child a:hover{
+				color: white;
+				padding-bottom: 0px;
+				border-bottom: 0px solid #ccd500;
+				background-color: rgba(239, 85, 9, 0.5);
+			}
+
+				.sous_menu{
+					display: none;
+				}
 
 	/* ------------------------ SLIDER ------------------------ */
 
@@ -330,6 +330,11 @@ body {
 
 	/* ------------------------ ACTIVITES-ACCUEIL ------------------------ */
 
+		.presentations-activites {
+			max-width: 90%;
+			margin: 0 auto;
+		}
+
 		.presentations_activites h1 {
 			font-size: 34px;
 			text-align: center;
@@ -348,14 +353,15 @@ body {
 		}
 
 		.presentations_activites ul {
-			display: table;
+			display: inline-block;
 			width: 100%;
 			padding: 0;
+			margin: 0;
 		}
 
 		.presentations_activites ul li {
-			display: table-cell;
-			width: 20%;
+			display: inline-block;
+			width:24.8%;
 			padding: 0 15px 0 15px;
 		}
 
@@ -522,7 +528,7 @@ body {
 
 		.articles_container article {
 			display: inline-block;
-			width: 32.2%;
+			width: 32.46%;
 			height: 240px;
 			/*background-color: #ccd500;*/
 			margin: 20px 1% 20px 0px;
@@ -1406,13 +1412,12 @@ body {
 
 		@media screen and (max-width: 1220px){
 			.articles_container article{
-				width: 47.2%;
+				width: 49.3%;
 			}
 
 			.articles_container article:nth-child(3n) {
 			margin-right: 1%;
 			}
-		}
 
 			.articles_container article:nth-child(2n) {
 			margin-right: 0;
@@ -1421,20 +1426,29 @@ body {
 
 
 		@media screen and (max-width: 1174px){
-			
-			.presentations_activites ul{
-				display: inline-block;
-			}
 
-			.presentations_activites ul li{
-				display: inline-block;
+			.presentations_activites ul li {
 				width: 49%;
 			}
 
-			.presentations_activites ul li:nth-child(2), .presentations_activites ul li:first-child{	
+			.presentations_activites ul li:first-child, .presentations_activites ul li:nth-child(2) {	
 				margin-bottom: 70px;
 			}
 		}
+
+		@media screen and (max-width: 904px){
+
+			.articles_container article{
+				width: 49.2%;
+			}
+
+			.date_activite{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
+		}
+
 
 	/*TABLETTE 768x1024*/
 
@@ -1459,11 +1473,7 @@ body {
 				width: 47.2%;
 			}*/
 
-			.date_activite{
-				margin: 0;
-				padding: 0;
-				width: 100%;
-			}
+			
 
 			.date_activite article p{
 				margin: 0;
