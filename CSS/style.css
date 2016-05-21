@@ -1518,6 +1518,15 @@ body {
 				width: 100%;
 			}
 
+			.activites_container span {
+				display: none;
+			}
+
+			.activites_container .filtre_dates {
+				display: inline-block;
+				margin: 10px 10px 0 0;
+			}
+
 		}
 
 
