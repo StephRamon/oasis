@@ -1613,8 +1613,63 @@ body {
 
 			.menu_principal {
 				display: none;
+				width: 100%;
+			}
+			
+			.menu_principal ul{
+				padding-top: 20px;
+				position: relative;
+				width: 100%;
+				top: 44px;
+				right: 0px;
+				z-index: 99;
+				background-color: #333;
 			}
 
+			.menu_principal ul li{
+				text-align: center;
+				line-height: 30px;
+				margin-left: 15px;
+				margin-top: 20px;
+				display: block;
+				background-color: #333;
+			}
+
+			nav ul li a{
+				color: white;
+				text-decoration: none;
+			}
+
+			nav ul li a:hover{
+				color: white;
+				padding-bottom: 0px;
+				border-bottom: 0px solid #ccd500;
+			}
+
+			.fa-search{
+				color: white;
+				margin-bottom: 20px;
+			}
+
+			.headform{
+				display: none;
+				top: 314px;
+				right: 45%;
+			}
+
+			.headform input{
+				width: 200px;
+			}
+
+			.aider {
+			background-color: #ccd500;
+			color: #333;
+			}
+
+			.aider:hover{
+				background-color: rgba(204, 2013, 0, 0.5);
+				color: #333;
+			}
 		}
 
 		@media screen and (max-width: 642px) {
@@ -1635,6 +1690,12 @@ body {
 			.galerie_1 img:nth-child(3), .galerie_2 img:nth-child(3){
 				display: none;
 			}
+
+		@media screen and (max-width: 602px){
+			.infos{
+				right: 86px;
+			}
+		}
 
 		@media screen and (max-width: 544px){
 
@@ -1678,7 +1739,29 @@ body {
 
 	/*SMARTPHONE en-dessous de 480px*/
 
-		@media screen and (max-width: 480px){
+		@media screen and (max-width: 480px) {
+
+			.menu_secondaire_phone a {
+				width: 100% !important;
+				min-height: 50px;
+				line-height: 50px;
+				padding-left: 20px;
+				text-align: left;
+			}
+
+			.menu_secondaire_phone a:after {
+				display: inline-block;
+				content: "";
+				width: 50px;
+				height: 50px;
+				float: right;
+				margin-right: 15px;
+				background-image: url(../images/icons/menu.svg);
+			}
+
+			.menu_secondaire i {
+				display: none;
+			}
 
 			.menu_footer, .infos_ecocentre {
 				width: 100%;
@@ -1783,7 +1866,7 @@ body {
 				}
 
 				.presentations_activites h1 {
-					padding-top: 20px;
+					padding-top: 40px;
 				}
 
 				.menu_secondaire_mail, .fa-envelope-o {
