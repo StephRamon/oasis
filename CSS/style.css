@@ -852,11 +852,19 @@ body {
 		float: left;
 	}
 
+	.calendar article img {
+		margin-top: 50px;
+	}
+
 	.calendar .text_resume {
 		float: right;
 		width: 60%;
-		padding: 0 60px;
+		/*padding: 0 60px;*/
 		text-align: center;
+	}
+
+	.calendar article {
+		margin: 50px auto;
 	}
 
 	.text_resume h3 {
@@ -893,9 +901,6 @@ body {
 		text-align: left;
 	}
 
-	.calendar article {
-		margin: 50px auto;
-	}
 
 
 
@@ -1421,6 +1426,18 @@ body {
 
 	/*DESKTOP > 768x1024*/
 
+		@media screen and (max-width: 1230px) {
+			
+			.calendar .text_resume {
+
+				width: 50%;
+			}
+
+			.calendar article p {
+
+			}
+		}
+
 		@media screen and (max-width: 1220px){
 			.articles_container article{
 				width: 49.3%;
@@ -1433,6 +1450,7 @@ body {
 			.articles_container article:nth-child(2n) {
 			margin-right: 0;
 			}
+			
 		}
 
 
@@ -1448,6 +1466,23 @@ body {
 			
 			.description_activites {
 				width: 60%;
+			}
+		}
+
+
+		@media screen and (max-width: 1008px) {
+			
+			.calendar .text_resume {
+				display: block;
+				width: 100%;
+			}
+
+			.calendar article {
+				text-align: center;
+			}
+
+			.calendar article .figure {
+				display: block;
 			}
 		}
 
@@ -1607,7 +1642,7 @@ body {
 		}
 
 
-		/*SMARTPHONE en-dessous de 480px*/
+	/*SMARTPHONE en-dessous de 480px*/
 
 		@media screen and (max-width: 480px){
 
