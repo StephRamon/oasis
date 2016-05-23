@@ -1612,7 +1612,7 @@ body {
 		@media screen and (max-width: 685px){
 
 			.menu_principal {
-				display: none;
+				/*display: none;*/
 				width: 100%;
 			}
 			
@@ -1620,7 +1620,7 @@ body {
 				padding-top: 20px;
 				position: relative;
 				width: 100%;
-				top: 44px;
+				top: -3px;
 				right: 0px;
 				z-index: 99;
 				background-color: #333;
@@ -1633,6 +1633,11 @@ body {
 				margin-top: 20px;
 				display: block;
 				background-color: #333;
+			}
+
+			nav {
+				margin: 0;
+				height: 1px;
 			}
 
 			nav ul li a{
