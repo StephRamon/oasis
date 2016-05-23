@@ -165,9 +165,13 @@ body {
 				padding: 0;
 			}
 
-			nav ul li{
+			nav ul li {
 				display: inline-block;
-				margin-right: 30px;
+				margin: 0 15px;
+			}
+
+			nav ul li {
+				margin-left: 0;
 			}
 
 			nav ul li a{
@@ -1480,16 +1484,16 @@ body {
 			}
 		}
 
-		@media screen and (max-width: 830px){
+		@media screen and (max-width: 840px){
 
 			nav ul {
 				font-size: 0.9em;
 			}
 
-		@media screen and (max-width: 785px){
+		@media screen and (max-width: 786px){
 
 			nav ul {
-				font-size: 0.8em;
+				/*font-size: 0.8em;*/
 			}
 
 		}
