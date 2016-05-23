@@ -1582,6 +1582,24 @@ body {
 			.calendar {
 				padding: 50px 5px;
 			}
+
+			/*A PROPOS / NOUS AIDER*/
+			.container_apropos{
+				width: 90%;
+			}
+
+			.galerie_1, .galerie_2{
+				text-align: center;
+			}
+
+			.galerie_1 img, .galerie_2 img{
+				margin: 0 1% 1% 1%;
+			}
+
+			.galerie_1 img:nth-child(4), .galerie_2 img:nth-child(4){
+				display: none;
+			}
+		
 		}
 
 		@media screen and (max-width: 746px){
@@ -1605,6 +1623,12 @@ body {
 				padding: 0;
 			}
 		}
+
+		@media screen and (max-width: 625px){
+
+			.galerie_1 img:nth-child(3), .galerie_2 img:nth-child(3){
+				display: none;
+			}
 
 		@media screen and (max-width: 544px){
 
@@ -1668,11 +1692,89 @@ body {
 				margin-top: 16px;
 			 }
 
-
 			.infos_ecocentre p:first-child {
 				margin-top: 35px;
 			}
+
+			/*CONTACT*/
+			#EcocentreOasis {
+        		height:200px;
+        		width:100%;
+   			}
+
+   			 .map{
+				position: static;
+			}
+
+			.infos{
+				position: static;
+				margin: 16px auto;
+				padding-bottom: 30px;
+				border-bottom: 2px solid #00893a;
+			}
+
+			.formulaire form{
+				padding: 50px 20px 20px 20px;
+				width: 100%;
+			}
+
+			.formulaire h3{
+				font-size: 1.2em;
+				padding-bottom: 0px;
+			}
+
+			.formulaire h3:after{
+				border: none;
+				padding-bottom: 0px;
+			}
+
+			.infos h1{
+				background-color: #00893a;
+				text-transform: uppercase;
+				color: white;
+			}
+
+			/*A PROPOS / NOUS AIDER*/
+
+			.galerie_1{
+				text-align: center;
+			}
+
+			.galerie_1 img{
+				margin: 0 1% 1% 1%;
+			}
+
+			.galerie_1 img:nth-child(3){
+				display: none;
+			}
+
+			.galerie_1 img:nth-child(4){
+				display: none;
+			}
+
+			.galerie_2{
+				display: none;
+			}
+
+			.container_apropos a{
+				margin: 80px auto 100px auto;
+			}
 		}
+
+		@media screen and (max-width: 410px){
+			
+			/*A PROPOS / NOUS AIDER*/
+				.galerie_1 img:nth-child(2){
+					display: none;
+				}			
+   		}
+
+   		@media screen and (max-width: 320px){
+
+			/*A PROPOS / NOUS AIDER*/
+				.galerie_1 img:nth-child(2){
+					display: none;
+				}
 
 
 
