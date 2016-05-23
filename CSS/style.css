@@ -1782,6 +1782,22 @@ body {
 					width: 250px;
 				}
 
+				.presentations_activites h1 {
+					padding-top: 20px;
+				}
+
+				.menu_secondaire_mail, .fa-envelope-o {
+					display: none !important;
+				}
+
+				.menu_secondaire {
+					background-color: #eaead9;
+				}
+
+				.menu_secondaire_phone a {
+					background-color: #ccd500;
+				}
+
 
    		}
 
