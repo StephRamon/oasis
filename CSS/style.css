@@ -1433,8 +1433,8 @@ body {
 				width: 50%;
 			}
 
-			.calendar article p {
-
+			.calendar article  {
+				margin: 0 auto;
 			}
 		}
 
@@ -1481,8 +1481,8 @@ body {
 				text-align: center;
 			}
 
-			.calendar article .figure {
-				display: block;
+			.calendar article figure {
+				float: none;
 			}
 		}
 
@@ -1577,6 +1577,10 @@ body {
 				top: -70px;
 				width: 50%;
 				left: 47%;
+			}
+
+			.calendar {
+				padding: 50px 5px;
 			}
 		}
 
