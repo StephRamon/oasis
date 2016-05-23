@@ -1469,6 +1469,18 @@ body {
 			}
 		}
 
+		@media screen and (max-width: 1085px){
+			.texte_article{
+				max-width: 608px;
+				float: none;
+				margin: 0 auto;
+			}
+
+			article div:first-child{
+				float: none;
+			}
+		}
+
 
 		@media screen and (max-width: 1008px) {
 			
@@ -1612,7 +1624,7 @@ body {
 		@media screen and (max-width: 685px){
 
 			.menu_principal {
-				/*display: none;*/
+				display: none;
 				width: 100%;
 			}
 			
@@ -1739,6 +1751,13 @@ body {
 		@media screen and (max-width: 602px){
 			.infos{
 				right: 86px;
+			}
+		}
+
+		@media screen and (max-width: 565px){
+			article div img{
+				width: 95%;
+				height: auto;
 			}
 		}
 
