@@ -1640,6 +1640,10 @@ body {
 				height: 1px;
 			}
 
+			nav ul li:first-child {
+				margin-top: 0;
+			}
+
 			nav ul li a{
 				color: white;
 				text-decoration: none;
