@@ -1617,6 +1617,12 @@ body {
 
 		}
 
+		@media screen and (max-width: 642px) {
+			.activites_container {
+				width: 95%;
+			}
+		}
+
 		@media screen and (max-width: 630px){
 
 			.activites_container {
