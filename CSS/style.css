@@ -1772,7 +1772,17 @@ body {
 			/*A PROPOS / NOUS AIDER*/
 				.galerie_1 img:nth-child(2){
 					display: none;
-				}			
+				}
+
+				.slider {
+					display: none;
+				}
+
+				.presentations_activites h1:after, .prochaines_activites h3:after, .formulaire h3:after{
+					width: 250px;
+				}
+
+
    		}
 
    		@media screen and (max-width: 320px){
