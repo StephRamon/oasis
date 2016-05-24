@@ -828,6 +828,11 @@ body {
 		padding: 50px;
 	}
 
+	.sous_menu_mois {
+		display: none;
+		min-width: 115px;
+	}
+
 	.calendar table {
 		border-collapse: separate;
 		width: 100%;
