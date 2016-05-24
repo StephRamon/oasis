@@ -206,8 +206,35 @@ body {
 			}
 
 				.sous_menu{
-					display: none;
+					display: block;
+					position: absolute;
+					top: 68px;
+					right: 296px;
+					z-index: 500;
 				}
+
+				.sous_menu li{
+					text-transform: none;
+					line-height: 30px;
+					background-color: white;
+					height: 30px;
+					display: block;
+				}
+
+				.sous_menu a{
+					display: block;
+					padding: 0 15px;
+				}
+
+				.sous_menu a:hover{
+					border-bottom: none;
+					color: #fff;
+				}
+
+				.sous_menu li:hover{
+					background-color: #ccd500;
+				}
+
 
 	/* ------------------------ SLIDER ------------------------ */
 
@@ -902,8 +929,6 @@ body {
 	}
 
 
-
-
 /* ------------------------ ACTIVITES ------------------------ */
 
 	.description{
@@ -912,7 +937,7 @@ body {
 		text-align: center;
 		padding-bottom: 20px;
 		border-bottom: 2px solid #00893a;
-		margin: 65px auto;
+		margin: 65px auto 65px auto;
 	}
 
 	.description h2{
@@ -1453,37 +1478,6 @@ body {
 			
 		}
 
-		@media screen and (max-width: 1215px){
-
-			.photo_block{
-				display: block;
-				float: none;
-				width: 100%;
-				height: auto;
-				text-align: center;
-				text-transform: uppercase;
-				margin: 0 auto;
-			}
-
-			.titre_article{
-				margin:  0 auto;
-			}
-
-			.text_block{
-				display: block;
-				float: none;
-				width: 90%;
-				height: auto;
-				overflow: auto;
-				text-align: center;
-				margin: 0 auto;
-			}
-
-			.text_block p{
-				text-align: left;
-			}
-		}
-
 
 		@media screen and (max-width: 1174px){
 
@@ -1626,8 +1620,6 @@ body {
 				padding: 50px 5px;
 			}
 
-
-
 			/*A PROPOS / NOUS AIDER*/
 			.container_apropos{
 				width: 90%;
@@ -1656,12 +1648,16 @@ body {
 
 		@media screen and (max-width: 685px){
 
-			.menu_principal {
+			.menu_principal{
 				display: none;
+			}
+
+			.menu_burger {
+				display: block;
 				width: 100%;
 			}
 			
-			.menu_principal ul{
+			.menu_burger ul{
 				padding-top: 20px;
 				position: relative;
 				width: 100%;
@@ -1671,7 +1667,7 @@ body {
 				background-color: #333;
 			}
 
-			.menu_principal ul li{
+			.menu_burger ul li{
 				text-align: center;
 				line-height: 30px;
 				margin-left: 15px;
@@ -1694,7 +1690,7 @@ body {
 				background-color: #ccd500 !important;
 			}
 
-			.menu_secondaire:after {
+			/*.menu_secondaire:after {
 				display: inline-block;
 				content: "";
 				width: 40px;
@@ -1703,6 +1699,18 @@ body {
 				margin: 5px 15px 0 0;
 				background-image: url(../images/icons/menu.svg);
 				cursor: pointer;
+				z-index: 999;
+			}*/
+
+			.menu_hamburger{
+				position: absolute;
+				top: 5px;
+				right: 10px;
+				background-image: url(../images/icons/menu.svg);
+				background-size: cover;
+				cursor: pointer;
+				width: 40px;
+				height: 40px;
 			}
 
 			.menu_secondaire_phone a {
@@ -1744,8 +1752,8 @@ body {
 
 			.headform{
 				display: none;
-				top: 314px;
-				right: 45%;
+				top: 293px;
+				right: 36%;
 			}
 
 			.headform input{
@@ -1761,25 +1769,6 @@ body {
 				background-color: rgba(204, 2013, 0, 0.5);
 				color: #333;
 			}
-
-			.text_block img{
-				width: 100%;
-				height: auto;
-			}
-
-			.text_block{
-				width: 100%;
-				padding: 20px;
-			}
-
-			.bouton_inscription {
-				display: block;
-				width: 40%;
-				padding: 0 15px;
-				margin: 0 auto;
-			}
-
-		
 		}
 
 		@media screen and (max-width: 642px) {

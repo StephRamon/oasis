@@ -8,6 +8,7 @@ $(document).ready(function(){
 
 		$('nav').toggleClass('menu_burger');
 		// $('.menu_hamburger').css('background-image', 'url(/images/icons/cancel.svg)');
+		
 			
 	})
 
