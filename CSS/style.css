@@ -912,7 +912,7 @@ body {
 		text-align: center;
 		padding-bottom: 20px;
 		border-bottom: 2px solid #00893a;
-		margin: 65px auto 65px auto;
+		margin: 65px auto;
 	}
 
 	.description h2{
@@ -1453,6 +1453,37 @@ body {
 			
 		}
 
+		@media screen and (max-width: 1215px){
+
+			.photo_block{
+				display: block;
+				float: none;
+				width: 100%;
+				height: auto;
+				text-align: center;
+				text-transform: uppercase;
+				margin: 0 auto;
+			}
+
+			.titre_article{
+				margin:  0 auto;
+			}
+
+			.text_block{
+				display: block;
+				float: none;
+				width: 90%;
+				height: auto;
+				overflow: auto;
+				text-align: center;
+				margin: 0 auto;
+			}
+
+			.text_block p{
+				text-align: left;
+			}
+		}
+
 
 		@media screen and (max-width: 1174px){
 
@@ -1595,6 +1626,8 @@ body {
 				padding: 50px 5px;
 			}
 
+
+
 			/*A PROPOS / NOUS AIDER*/
 			.container_apropos{
 				width: 90%;
@@ -1727,6 +1760,25 @@ body {
 				background-color: rgba(204, 2013, 0, 0.5);
 				color: #333;
 			}
+
+			.text_block img{
+				width: 100%;
+				height: auto;
+			}
+
+			.text_block{
+				width: 100%;
+				padding: 20px;
+			}
+
+			.bouton_inscription {
+				display: block;
+				width: 40%;
+				padding: 0 15px;
+				margin: 0 auto;
+			}
+
+		
 		}
 
 		@media screen and (max-width: 642px) {
