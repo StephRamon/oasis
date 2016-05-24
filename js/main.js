@@ -21,7 +21,7 @@ $(document).ready(function(){
 	// SOUS MENU ACTIVITES
 
 	$('.onglet_activites').click(function(){
-		$('.sous_menu').slideToggle(100);
+		$('.sous_menu').slideToggle(50);
 	})
 
 	$('.onglet_activites').focusout(function(){
