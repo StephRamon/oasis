@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 		$('nav').toggleClass('menu_burger');
 		// $('.menu_hamburger').css('background-image', 'url(/images/icons/cancel.svg)');
-		
+
 			
 	})
 
@@ -20,12 +20,12 @@ $(document).ready(function(){
 
 	// SOUS MENU ACTIVITES
 
-	$('.onglet_activites').mouseover(function(){
-		$('.sous_menu').show(100);
+	$('.onglet_activites').click(function(){
+		$('.sous_menu').slideToggle(100);
 	})
 
-	$('.onglet_activites,.sous_menu').mouseout(function(){
-		$('.sous_menu').hide(100);
+	$('.onglet_activites').focusout(function(){
+		$('.sous_menu').slideToggle(100);
 	})
 
 });
