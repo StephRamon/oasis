@@ -1702,6 +1702,7 @@ body {
 				float: right;
 				margin: 5px 15px 0 0;
 				background-image: url(../images/icons/menu.svg);
+				cursor: pointer;
 			}
 
 			.menu_secondaire_phone a {
