@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 
 	var $onglet = $('.sidebar');
-	$onglet.find('span').click(function () {
+	$onglet.find('span').on('click',function() {
 	    var opened = !!$onglet.data('opened');
 	    if(opened) {
 	        $onglet.animate({ left: -221 });
@@ -77,14 +77,21 @@ $(document).ready(function(){
 			valid = false;
 		} else {
 			$('#name').css('border','0px');
-		}
+		};
 		if($('#firstname').val() == ''){
 			$('#firstname').val('Veuillez entrer votre prénom')
 			$('#firstname').css('border','2px solid red');
 			valid = false;
 		} else {
 			$('#firstname').css('border','0px');
-		}
+		};
+		if($('#date').val() == ''){
+			$('#date').val('Veuillez entrer une date')
+			$('#date').css('border','2px solid red');
+			valid = false;
+		} else {
+			$('#date').css('border','0px');
+		};
 		if($('#mail').val() == ''){
 			$('#mail').val('Veuillez entrer votre adresse email')
 			$('#mail').css('border','2px solid red');
@@ -92,7 +99,7 @@ $(document).ready(function(){
 		} 
 		else {
 			$('#mail').css('border','0px');
-		}
+		};
 		return valid;
 	});
 

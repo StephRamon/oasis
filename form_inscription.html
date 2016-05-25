@@ -46,10 +46,10 @@
           <option value="fromage">Atelier fromage</option>
           <option value="savon">Atelier savon</option>
         </select>
-    <label for="date">Date*</label><input type="date" required/>
-    <label for="nombre">Nombre de participants*</label><input type="number" min="1" required/>
+    <label for="date">Date*</label><input type="date" id="date" required/>
+    <label for="nombre">Nombre de participants*</label><input type="number" min="1" max="30" value="1" required/>
     <label for="message">Remarques ou questions éventuelles</label><textarea name="message" id="message" cols="30" rows="10"></textarea>
-    <input type="submit" value="ENVOYER" /><!-- mettre en jQuery un PreventDefault e pour récupérer l'événement et faire un lien vers la page merci.html -->
+    <input type="submit" id="envoyer" value="ENVOYER" /><!-- mettre en jQuery un PreventDefault e pour récupérer l'événement et faire un lien vers la page merci.html -->
 </form>
    
 </section>
