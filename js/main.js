@@ -65,5 +65,37 @@ $(document).ready(function(){
 	// 	}
 	// });
 
+
+
+	// FORMULAIRE
+
+	$('#envoyer').click(function(){
+		valid = true;
+		if($('#name').val() == ''){
+			$('#name').val('Veuillez entrer votre nom')
+			$('#name').css('border','2px solid red');
+			valid = false;
+		} else {
+			$('#name').css('border','0px');
+		}
+		if($('#firstname').val() == ''){
+			$('#firstname').val('Veuillez entrer votre prénom')
+			$('#firstname').css('border','2px solid red');
+			valid = false;
+		} else {
+			$('#firstname').css('border','0px');
+		}
+		if($('#mail').val() == ''){
+			$('#mail').val('Veuillez entrer votre adresse email')
+			$('#mail').css('border','2px solid red');
+			valid = false;
+		} 
+		else {
+			$('#mail').css('border','0px');
+		}
+		return valid;
+	});
+
+
 });
 
