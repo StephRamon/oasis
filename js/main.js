@@ -40,7 +40,12 @@ $(document).ready(function(){
 	
 
 	$('.sidebar span').click(function(){
+
+		if (true) {
 		$('.sidebar').animate({'left':'-221px'}, 500);
+		} else {
+			
+		}
 	});
 
 
