@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 	$('.sous_menu').hide();
+	$('.headform').hide();
     
 	// MENU HAMBURGER
 
@@ -15,7 +16,7 @@ $(document).ready(function(){
 	// CHAMPS DE RECHERCHE
 
 	$('.fa-search').click(function(){
-		$('.headform').css('display','block');
+		$('.headform').toggle(50);
 	})
 
 	// SOUS MENU ACTIVITES
@@ -26,6 +27,20 @@ $(document).ready(function(){
 
 	$('.onglet_activites').focusout(function(){
 		$('.sous_menu').slideToggle(100);
-	})
+	});
+
+
+	// MENU FIXE
+
+	// var nav = $('.menu');
+
+	// $(window).scroll(function(){
+	// 	if($(this).scrollTop() >140) {
+	// 		nav.addClass("f-nav");
+	// 	}
+	// 	else {
+	// 		nav.removeClass("f-nav");
+	// 	}
+	// });
 
 });

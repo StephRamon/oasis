@@ -74,6 +74,14 @@ html{
 
 /*MEDIA QUERIES*/
 
+
+	@media screen and (max-width: 769px){
+		.erreur_merci {
+			margin-top: 0;
+			height: 1024px;
+		}
+	}
+
 	@media screen and (max-width: 530px){
 			.erreur{
 				width: 100%;
@@ -81,7 +89,6 @@ html{
 
 			.erreur_merci{
 				width: 100%;
-				height: auto;
 			}
 
 			.erreur_merci p{
