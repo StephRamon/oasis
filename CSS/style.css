@@ -52,9 +52,6 @@ body {
 			-webkit-box-shadow: 0px -9px 15px #000000;
 			box-shadow: 0px -9px 15px #000000;
 			z-index: 9999999px;
-			margin-bottom: 50px;
-			top: 0;
-			left: 0;
 		}
 
 
@@ -960,7 +957,7 @@ body {
 	}
 
 	.sidebar{
-		position: absolute;
+		position: fixed;
 		z-index: 800;
 		top: 536px;
 		left: 0px;
@@ -990,14 +987,26 @@ body {
 		text-decoration: none;
 	}
 
-	.sidebar span{
+	.sidebar span {
+		display: inline-block;
 		cursor: pointer;
 		position: absolute;
 		color: #333;
-		/*background-color: rgba(255, 255, 255, 0.9);*/
 		top: 15px;
 		right: 5px;
 	}
+
+	.fa {
+		-webkit-transform: rotate(0deg);
+  		-webkit-transition: all 0.2s ease;
+	}
+
+	.fa .right {
+  		-webkit-transform: rotate(-180deg);
+  		-webkit-transition: all 0.2s ease;
+	}
+
+
 	.sidebar span i{
 		font-size: 2em;
 	}

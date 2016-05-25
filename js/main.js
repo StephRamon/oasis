@@ -30,6 +30,20 @@ $(document).ready(function(){
 	});
 
 
+
+
+	// SIDEBAR ACTIVITES ET NEWS
+
+	$(window).scroll(function(){
+	    $(".sidebar").css("top",Math.max(0,536-$(this).scrollTop()));
+	});
+	
+
+	$('.sidebar span').click(function(){
+		$('.sidebar').animate({'left':'-221px'}, 500);
+	});
+
+
 	// MENU FIXE
 
 	// var nav = $('.menu');
@@ -44,3 +58,4 @@ $(document).ready(function(){
 	// });
 
 });
+
