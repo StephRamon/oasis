@@ -34,20 +34,24 @@ $(document).ready(function(){
 
 	// SIDEBAR ACTIVITES ET NEWS
 
+	
+
 	$(window).scroll(function(){
 	    $(".sidebar").css("top",Math.max(0,536-$(this).scrollTop()));
 	});
-	
 
-	$('.sidebar span').click(function(){
 
-		if (true) {
-		$('.sidebar').animate({'left':'-221px'}, 500);
-		} else {
-			
-		}
-	});
+	var $onglet = $('.sidebar');
 
+	$onglet.find('span').click(function () {
+	    var opened = !!$onglet.data('opened');
+	    if(opened) {
+	        $onglet.animate({ left: -221 });
+	    } else {
+	        $onglet.animate({ left: 0 });
+    	}
+    $onglet.data('opened', !opened);
+});
 
 	// MENU FIXE
 
