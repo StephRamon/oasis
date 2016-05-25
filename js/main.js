@@ -42,7 +42,6 @@ $(document).ready(function(){
 
 
 	var $onglet = $('.sidebar');
-
 	$onglet.find('span').click(function () {
 	    var opened = !!$onglet.data('opened');
 	    if(opened) {
@@ -51,7 +50,7 @@ $(document).ready(function(){
 	        $onglet.animate({ left: 0 });
     	}
     $onglet.data('opened', !opened);
-});
+	});
 
 	// MENU FIXE
 
