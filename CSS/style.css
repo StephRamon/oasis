@@ -1748,6 +1748,11 @@ body {
 
 		@media screen and (max-width: 685px){
 
+			.menu_secondaire {
+				position: fixed;
+				width: 100%;
+			}
+
 			.menu_principal{
 				display: none;
 			}
@@ -1761,7 +1766,7 @@ body {
 				padding-top: 20px;
 				position: relative;
 				width: 100%;
-				top: -23px;
+				top: 26px;
 				right: 0px;
 				z-index: 99;
 				background-color: #333;
@@ -1972,8 +1977,6 @@ body {
 
 		@media screen and (max-width: 480px) {
 
-			
-
 			.menu_footer, .infos_ecocentre {
 				width: 100%;
 				top: 180px;
@@ -2071,6 +2074,10 @@ body {
 
 				.slider {
 					display: none;
+				}
+
+				.presentations_activites {
+					margin-top: 50px;
 				}
 
 				.presentations_activites h1:after, .prochaines_activites h3:after, .formulaire h3:after{
