@@ -39,9 +39,9 @@ $(document).ready(function(){
 	    $(".sidebar").css("top",Math.max(0,536-$(this).scrollTop()));
 	});
 
-
 	var $onglet = $('.sidebar');
-	$onglet.find('span').on('click',function() {
+	$onglet.find('span').on('click',function(e) {
+		e.preventDefault();
 	    var opened = !!$onglet.data('opened');
 	    if(opened) {
 	        $onglet.animate({ left: -221 });
