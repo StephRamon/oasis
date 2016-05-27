@@ -15,7 +15,7 @@ $(document).ready(function(){
 	// CHAMPS DE RECHERCHE
 
 	$('.fa-search').click(function(){
-		$('.headform').toggle(250);
+		$('.headform').toggle();
 	});
 
 	// SOUS MENU ACTIVITES

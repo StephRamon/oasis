@@ -1760,14 +1760,18 @@ body {
 			.menu_burger {
 				display: block;
 				width: 100%;
+				position: fixed;
+				z-index: 10000;
+				top: -1px;
 			}
 			
 			.menu_burger ul{
-				padding-top: 20px;
-				position: relative;
+				position: fixed;
 				width: 100%;
-				top: 26px;
+				height: 480px;
+				top: 27px;
 				right: 0px;
+				padding-top: 20px;
 				z-index: 99;
 				background-color: #333;
 			}
@@ -1788,6 +1792,10 @@ body {
 				line-height: 50px;
 				padding-left: 20px;
 				text-align: left;
+			}
+
+			.active {
+				border-bottom: none;
 			}
 
 			.menu_secondaire {
