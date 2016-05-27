@@ -185,7 +185,7 @@ body {
 			nav ul li a:hover {
 				color: #ccd500;
 				padding-bottom: 15px;
-				border-bottom: 1px solid #ccd500;
+				/*border-bottom: 1px solid #ccd500;*/
 			}
 
 			.active {
@@ -829,7 +829,6 @@ body {
 
 			}
 
-
 /* ------------------------ AGENDA ------------------------ */
 
 	.calendar {
@@ -942,7 +941,6 @@ body {
 		text-align: left;
 	}
 
-
 /* ------------------------ ACTIVITES ------------------------ */
 
 	.description{
@@ -1027,8 +1025,8 @@ body {
 	.liste_articles{
 		max-width: 1069px;
 		margin: 0 auto;
-		position: relative;
-		left: 50px;
+		/*position: relative;
+		left: 50px;*/
 	}
 	.plus_articles{
 		display: inline-block;
@@ -1688,6 +1686,14 @@ body {
 			.date_activite article p{
 				margin: 0;
 			}
+	
+			article p {
+				margin: 0 25px;
+			}
+
+			article p span {
+				margin-bottom: 10px;
+			}
 
 			.social, .menu_footer, .infos_ecocentre {
 				display: block;
@@ -1917,7 +1923,7 @@ body {
 
 		@media screen and (max-width: 565px){
 			article div img{
-				width: 95%;
+				width: 100%;
 				height: auto;
 			}
 		}
