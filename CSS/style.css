@@ -58,8 +58,8 @@ body {
 		/*MENU SECONDAIRE*/
 
 			.menu_secondaire{
-/*				position: fixed;
-*/				height: 30px;
+				/*position: fixed;*/
+				height: 30px;
 				background-color: #00893a;
 				z-index: 999;
 				
@@ -163,7 +163,7 @@ body {
 				border-radius: 17.5px;
 			}
 
-			nav ul{
+			nav ul {
 				margin-top: 23px;
 				padding: 0;
 			}
@@ -177,12 +177,18 @@ body {
 				margin-left: 0;
 			}
 
-			nav ul li a{
+			nav ul li a {
 				color: #333;
 				text-decoration: none;
 			}
 
-			nav ul li a:hover{
+			nav ul li a:hover {
+				color: #ccd500;
+				padding-bottom: 15px;
+				border-bottom: 1px solid #ccd500;
+			}
+
+			.active {
 				color: #ccd500;
 				padding-bottom: 15px;
 				border-bottom: 1px solid #ccd500;
