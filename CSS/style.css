@@ -997,8 +997,10 @@ body {
 		cursor: pointer;
 		position: absolute;
 		color: #333;
-		top: 15px;
-		right: 5px;
+		top: -21px;
+		right: -26px;
+		padding: 30px;
+
 	}
 
 	.fa {
