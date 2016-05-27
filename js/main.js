@@ -28,16 +28,12 @@ $(document).ready(function(){
 		$('.sous_menu').slideToggle(100);
 	});
 
-
-
-
 	// SIDEBAR ACTIVITES ET NEWS
-
-	
 
 	$(window).scroll(function(){
 	    $(".sidebar").css("top",Math.max(0,536-$(this).scrollTop()));
 	});
+
 
 	var $onglet = $('.sidebar');
 	$onglet.find('span').on('click',function(e) {
@@ -50,21 +46,6 @@ $(document).ready(function(){
     	}
     $onglet.data('opened', !opened);
 	});
-
-	// MENU FIXE
-
-	// var nav = $('.menu');
-
-	// $(window).scroll(function(){
-	// 	if($(this).scrollTop() >140) {
-	// 		nav.addClass("f-nav");
-	// 	}
-	// 	else {
-	// 		nav.removeClass("f-nav");
-	// 	}
-	// });
-
-
 
 	// FORMULAIRE
 

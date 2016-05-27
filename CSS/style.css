@@ -1020,6 +1020,8 @@ body {
 
 	.blogsidebar {
 		top: 135px;
+		overflow: scroll;
+		scroll-behavior: smooth;
 	}
 
 	/*ARTICLES*/
@@ -1805,17 +1807,9 @@ body {
 				background-color: #ccd500 !important;
 			}
 
-			/*.menu_secondaire:after {
-				display: inline-block;
-				content: "";
-				width: 40px;
-				height: 40px;
-				float: right;
-				margin: 5px 15px 0 0;
-				background-image: url(../images/icons/menu.svg);
-				cursor: pointer;
-				z-index: 999;
-			}*/
+			.sidebar {
+				top: 422px;
+			}
 
 			.menu_hamburger{
 				position: absolute;
