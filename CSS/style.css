@@ -1000,6 +1000,7 @@ body {
 		top: -21px;
 		right: -26px;
 		padding: 30px;
+		border-radius: 15px;
 
 	}
 
@@ -1788,6 +1789,10 @@ body {
 				margin-top: 20px;
 				display: block;
 				background-color: #333;
+			}
+
+			.sous_menu li {
+				text-transform: uppercase;
 			}
 
 			.menu_secondaire_phone a {
