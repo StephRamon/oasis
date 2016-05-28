@@ -1189,6 +1189,7 @@ body {
 
 	.share p {
 		position: relative;
+		left: 25px;
 		display: inline-block;
 		background-color: #C3C3C3;
 		height: 30px;
@@ -1211,14 +1212,14 @@ body {
 
 	.share .fa-facebook {
 		background-color: #3B5A94;
-		left: -25px;
+		left: 0;
 		padding: 0 15px 0 30px;
 		z-index: 805;
 	}
 
 	.share .fa-twitter {
 		background-color: #4FADE9;
-		left: -50px;
+		left: -25px;
 		padding: 0 10px 0 30px;
 		z-index: 800;
 	}
@@ -1895,6 +1896,7 @@ body {
 			.bouton_inscription {
 				display: block;
 				width: 40%;
+				min-width: 130px;
 				padding: 0 15px;
 				margin: 0 auto;
 			}

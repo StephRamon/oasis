@@ -31,13 +31,23 @@ $(document).ready(function(){
 	// SIDEBAR ACTIVITES ET NEWS
 
 	$(window).scroll(function(){
+
+		// var posTop = $('.liste_articles').offset().top;
+		// var marg = $('.sidebar').css('margin-top');
+ 
+		// console.log(pos.top);
+		// console.log(pos.left);
+
+	    // $('.sidebar').css('top',Math.max(0,posTop-marg.scrollTop());
+
+
 	    $(".sidebar").css("top",Math.max(0,536-$(this).scrollTop()));
 	});
 
 
 	var $onglet = $('.sidebar');
-	$onglet.find('span').on('click',function(e) {
-		e.preventDefault();
+	$onglet.find('span').on('click',function(event) {
+		event.preventDefault();
 	    var opened = !!$onglet.data('opened');
 	    if(opened) {
 	        $onglet.animate({ left: -221 });
