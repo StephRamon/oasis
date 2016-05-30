@@ -1019,9 +1019,8 @@ body {
 	}
 
 	.blogsidebar {
-		top: 135px !important;
-		overflow: scroll;
-		scroll-behavior: smooth;
+		top: 135px;
+		overflow: auto;
 	}
 
 	/*ARTICLES*/
