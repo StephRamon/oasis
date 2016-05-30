@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 	$('.sous_menu').hide();
 	$('.headform').hide();
+	$('.archives li ul').hide();
     
 	// MENU HAMBURGER
 
@@ -38,16 +39,21 @@ $(document).ready(function(){
 
 	var $onglet = $('.sidebar');
 	$onglet.find('span').on('click',function() {
-	    var opened = $onglet.data('opened');
+	    var opened = !!$onglet.data('opened');
 	    if(opened) {
-	        $onglet.animate({ left: -221 });
-	        $('span i').removeClass("fa-angle-left").addClass("fa-angle-right");
-	    } else {
 	        $onglet.animate({ left: 0 });
 	        $('span i').removeClass("fa-angle-right").addClass("fa-angle-left");
+	    } else {
+	        $onglet.animate({ left: -221 });
+	        $('span i').removeClass("fa-angle-left").addClass("fa-angle-right");
     	}
     $onglet.data('opened', !opened);
 	});
+
+
+	// SIDEBAR ARCHIVES MOIS
+
+
 
 	// FORMULAIRE
 
