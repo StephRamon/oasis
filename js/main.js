@@ -32,27 +32,19 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 
-		// var posTop = $('.liste_articles').offset().top;
-		// var marg = $('.sidebar').css('margin-top');
- 
-		// console.log(pos.top);
-		// console.log(pos.left);
-
-	    // $('.sidebar').css('top',Math.max(0,posTop-marg.scrollTop());
-
-
 	    $(".sidebar").css("top",Math.max(0,536-$(this).scrollTop()));
 	});
 
 
 	var $onglet = $('.sidebar');
-	$onglet.find('span').on('click',function(event) {
-		event.preventDefault();
-	    var opened = !!$onglet.data('opened');
+	$onglet.find('span').on('click',function() {
+	    var opened = $onglet.data('opened');
 	    if(opened) {
 	        $onglet.animate({ left: -221 });
+	        $('span i').removeClass("fa-angle-left").addClass("fa-angle-right");
 	    } else {
 	        $onglet.animate({ left: 0 });
+	        $('span i').removeClass("fa-angle-right").addClass("fa-angle-left");
     	}
     $onglet.data('opened', !opened);
 	});

@@ -43,7 +43,7 @@ body {
 			position: relative;
 			/*position: fixed;*/
 			background-color: white;
-			font-family: 'Lato', sans-serif;
+			/*font-family: 'Lato', sans-serif;*/
 			text-transform: uppercase;
 			color: #333;
 			font-size: 0.875em;
@@ -1019,7 +1019,7 @@ body {
 	}
 
 	.blogsidebar {
-		top: 135px;
+		top: 135px !important;
 		overflow: scroll;
 		scroll-behavior: smooth;
 	}
