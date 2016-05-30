@@ -34,6 +34,15 @@ body {
 	margin: 0 auto;
 }
 
+h5 {
+	display: block;
+	font-size: 1em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
 
 /* ------------------------ ACCUEIL ------------------------ */
 
@@ -965,7 +974,7 @@ body {
 		z-index: 800;
 		top: 536px;
 		left: 0px;
-		height: 1200px;
+		min-height: 1200px;
 		background-color: rgba(255, 255, 255, 0.9);
 		padding-right: 20px;
 	}
@@ -1001,6 +1010,10 @@ body {
 		right: -35px;
 		padding: 30px 40px;
 		border-radius: 40px;
+	}
+
+	.blogsidebar {
+		width: 240.8px;
 	}
 
 	.fa {
@@ -1705,7 +1718,7 @@ body {
 			}
 
 			.social {
-				top: -150px;
+				top: -110px;
 				width: 100%;
 			}
 
@@ -1739,6 +1752,10 @@ body {
 
 			.galerie_1 img:nth-child(4), .galerie_2 img:nth-child(4){
 				display: none;
+			}
+
+			article span {
+				margin: 25px 0;
 			}
 		
 		}

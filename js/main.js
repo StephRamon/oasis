@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$('.sous_menu').hide();
 	$('.headform').hide();
 	$('.archives li ul').hide();
+	$('.autres_articles').hide();
     
 	// MENU HAMBURGER
 
@@ -39,6 +40,8 @@ $(document).ready(function(){
 
 
 	var $onglet = $('.sidebar');
+	var $ongletBlog = $('.blogsidebar');
+
 	$onglet.find('span').on('click',function() {
 	    var opened = !!$onglet.data('opened');
 	    if(opened) {
@@ -51,10 +54,40 @@ $(document).ready(function(){
     $onglet.data('opened', !opened);
 	});
 
+	// SIDEBAR AUTRES ARTICLES
+
+	$('.titre_alim a').click(function(){
+		$('.alim').slideToggle(250);
+	});
+	$('.titre_eco a').click(function(){
+		$('.ecocitoyen').slideToggle(250);
+	});
+	$('.titre_renov a').click(function(){
+		$('.renov').slideToggle(250);
+	});
+	$('.titre_art a').click(function(){
+		$('.artist').slideToggle(250);
+	});
+	
 
 	// SIDEBAR ARCHIVES MOIS
 
-
+	$('.arch_2016 a').click(function(){
+		$('.autres_articles').slideUp(250);
+		$('.arch_2016 ul').slideToggle(250);
+	});
+	$('.arch_2015 a').click(function(){
+		$('.autres_articles').slideUp(250);
+		$('.arch_2015 ul').slideToggle(250);
+	});
+	$('.arch_2014 a').click(function(){
+		$('.autres_articles').slideUp(250);
+		$('.arch_2014 ul').slideToggle(250);
+	});
+	$('.arch_2013 a').click(function(){
+		$('.autres_articles').slideUp(250);
+		$('.arch_2013 ul').slideToggle(250);
+	});
 
 	// FORMULAIRE
 
