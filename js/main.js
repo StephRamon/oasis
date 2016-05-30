@@ -34,8 +34,8 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 
-	    $(".sidebar").css("top",Math.max(0,536-$(this).scrollTop()));
-	    $(".blogsidebar").css("top",Math.max(0,135-$(this).scrollTop()));
+	    $(".sidebar").css("top",Math.max(115,536-$(this).scrollTop()));
+	    $(".blogsidebar").css("top",Math.max(115,150-$(this).scrollTop()));
 	});
 
 
