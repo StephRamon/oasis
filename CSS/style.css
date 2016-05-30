@@ -1804,6 +1804,7 @@ h5 {
 			.slider:before {
 				height: 55px;
 			}
+
 		}
 
 		@media screen and (max-width: 685px){
@@ -1827,6 +1828,14 @@ h5 {
 				position: fixed;
 				z-index: 10000;
 				top: -1px;
+			}
+
+			.slider:before, .calendar:before, .blogliste_articles:before, .container_apropos:before, .map:before {
+				height: 50px;
+			}
+
+			.despcription:before {
+				height: 90px;
 			}
 			
 			.menu_burger ul {
