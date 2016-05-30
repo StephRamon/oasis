@@ -9,8 +9,7 @@ $(document).ready(function(){
 
 	$('.menu_hamburger').click(function(){
 
-		$('nav').toggleClass('menu_burger');
-		// $('.menu_hamburger').css('background-image', 'url(/images/icons/cancel.svg)');	
+		$('nav').toggleClass('menu_burger');	
 	});
 
 

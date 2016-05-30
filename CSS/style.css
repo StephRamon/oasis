@@ -54,10 +54,7 @@ h5 {
 		}
 
 		.menu{
-			/*position: relative;*/
-			/*position: fixed;*/
 			background-color: white;
-			/*font-family: 'Lato', sans-serif;*/
 			text-transform: uppercase;
 			color: #333;
 			font-size: 0.875em;
@@ -72,7 +69,6 @@ h5 {
 		/*MENU SECONDAIRE*/
 
 			.menu_secondaire{
-				/*position: fixed;*/
 				height: 30px;
 				background-color: #00893a;
 				z-index: 999;
@@ -95,7 +91,6 @@ h5 {
 				color: #333333;
 				text-decoration: none;
 				line-height: 30px;
-				/*z-index: 900;*/
 				margin: 0;
 			}
 
@@ -149,14 +144,10 @@ h5 {
 				float:left;
 			}
 			.menu_principal{
-				/*width:755px;*/
 				float:right;
 			}
 
 			.fa-search{
-				/*float: right;
-				margin-top: 35px;
-				margin-right: 42px;*/
 				cursor: pointer;
 			}
 
@@ -199,7 +190,6 @@ h5 {
 			nav ul li a:hover {
 				color: #ccd500;
 				padding-bottom: 15px;
-				/*border-bottom: 1px solid #ccd500;*/
 			}
 
 			.active {
@@ -217,7 +207,6 @@ h5 {
 			color: white;
 			font-weight: bold;
 			text-align: center;
-			/*padding-top: 7px;*/
 			line-height: 35px;
 			}
 
@@ -288,7 +277,6 @@ h5 {
 			width: 40%;
 			min-width: 300px;
 			margin: auto;
-			/*padding: 5px 50px 20px 50px;*/
 		}
 
 		.description_activites p:first-child {
@@ -352,7 +340,6 @@ h5 {
 		}
 
 		.slider_nav {
-			/*display: inline-block;*/
 			position: absolute;
 			bottom: 40px;
 			width: 100%;
@@ -452,29 +439,25 @@ h5 {
 			background-image: url(../images/icons/icons_activites.png);
 			background-repeat: no-repeat;
 			background-position: 0 0;
-		/*	background-color: #00893a;
-		*/}
+		}
 
 		.presentations_activites ul li:nth-child(2) a:nth-child(2){
 			background-image: url(../images/icons/icons_activites.png);
 			background-repeat: no-repeat;
 			background-position: -227px 0;
-		/*	background-color: #ccd500;
-		*/}
+		}
 
 		.presentations_activites ul li:nth-child(3) a:nth-child(2){
 			background-image: url(../images/icons/icons_activites.png);
 			background-repeat: no-repeat;
 			background-position: -454px 0;
-		/*	background-color: #fcedc8;
-		*/}
+		}
 
 		.presentations_activites ul li:nth-child(4) a:nth-child(2){
 			background-image: url(../images/icons/icons_activites.png);
 			background-repeat: no-repeat;
 			background-position: -681px 0;
-		/*	background-color: #dcccb9;
-		*/}
+		}
 
 		.presentations_activites ul li p {
 			height: 110px;
@@ -586,7 +569,6 @@ h5 {
 			display: inline-block;
 			width: 32.46%;
 			height: 240px;
-			/*background-color: #ccd500;*/
 			margin: 20px 1% 20px 0px;
 		}
 
@@ -847,8 +829,6 @@ h5 {
 /* ------------------------ AGENDA ------------------------ */
 
 	.calendar {
-		/*position: relative;
-		top: 150px;*/
 		padding: 50px;
 	}
 
@@ -928,7 +908,6 @@ h5 {
 	.calendar .text_resume {
 		float: right;
 		width: 60%;
-		/*padding: 0 60px;*/
 		text-align: center;
 	}
 
@@ -982,7 +961,6 @@ h5 {
 	}
 
 	.description h2{
-		/*font-family: 'Lato', sans-serif;*/
 		font-weight: bold;
 		text-transform: uppercase;
 		text-align: center;
@@ -1061,8 +1039,6 @@ h5 {
 	.liste_articles{
 		max-width: 1069px;
 		margin: 95px auto;
-		/*position: relative;
-		left: 50px;*/
 	}
 	.plus_articles{
 		display: inline-block;
@@ -1288,7 +1264,6 @@ h5 {
 	.container_apropos{
 		width: 720px;
 		margin: 0 auto;
-		/*font-family: 'Lato', sans-serif;*/
 	}
 
 	.container_apropos h3{
@@ -1444,7 +1419,6 @@ h5 {
 		max-width: 1200px;
 		height: auto;
 		margin: 0 auto;
-		/*font-family: 'Lato', sans-serif;*/
 		margin-bottom: 50px;
 	}
 
@@ -1696,13 +1670,6 @@ h5 {
 			nav ul {
 				font-size: 0.9em;
 			}
-
-		@media screen and (max-width: 786px){
-
-			nav ul {
-				/*font-size: 0.8em;*/
-			}
-
 		}
 
 
@@ -1863,7 +1830,6 @@ h5 {
 			}
 
 			.menu_secondaire_phone a {
-				/*width: 100% !important;*/
 				left: 0;
 				min-height: 50px;
 				line-height: 50px;
