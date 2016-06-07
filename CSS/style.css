@@ -397,15 +397,12 @@ h5 {
 		}
 
 		.presentations_activites ul {
-			display: inline-block;
-			width: 100%;
-			padding: 0;
-			margin: 0;
+			display: flex;
 		}
 
 		.presentations_activites ul li {
-			display: inline-block;
-			width:24.8%;
+			display: inline-flex;
+			flex-direction: column;
 			padding: 0 15px 0 15px;
 		}
 
@@ -461,11 +458,11 @@ h5 {
 
 		.presentations_activites ul li p {
 			height: 110px;
-			text-align: justify;
+			/*text-align: justify;
 			-webkit-hyphens: auto;
 		   	-moz-hyphens: auto;
 		   	-ms-hyphens: auto;
-		   	hyphens: auto;
+		   	hyphens: auto;*/
 		}
 
 
