@@ -535,6 +535,7 @@ h5 {
 
 		.activites_container span {
 			display: inline-block;
+			position: relative;
 			float: left;
 			height: 30px;
 			line-height: 30px;
@@ -543,26 +544,40 @@ h5 {
 			padding: 0 15px;
 			color: #fff;
 			margin-right: 0.2%;
+			z-index: 5;
 		}
 
 		.sous_menu_groupe {
 			display: block;
+			position: relative;
+			top: 4px;
+			left: 164px;
 			margin: 0;
 			padding: 0;
-			padding-left: 16px;
 			list-style: none;
-			width: 131px;
-			position: relative;
-			top: 0;
-			left: 164px;
+			width: 130px;
+			border-radius: 15px 15px 0 0;
+			background-color: #fff;
+			z-index: 2;
 		}
 
 		.sous_menu_groupe a{
+			display: inline-block;
 			text-decoration: none;
+			text-align: center;
+			color: #000;
+			width: 130px;
+		}
+
+		.sous_menu_groupe a:hover{
+			background-color: #d7bea3;
+			color: #fff;
 		}
 
 		.activites_container .filtre_dates {
 			float: right;
+			position: relative;
+			top: 0;
 			background-color: #c3c3c3;
 			margin-right: 7px;
 		}
@@ -2035,7 +2050,7 @@ h5 {
 				width: 100%;
 			}
 
-			.activites_container span {
+			.activites_container span, .sous_menu_groupe {
 				display: none;
 			}
 

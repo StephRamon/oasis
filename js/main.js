@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$('.sous_menu').hide();
-	// $('.sous_menu_groupe').hide();
+	$('.sous_menu_groupe').hide();
 	$('.headform').hide();
 	$('.archives li ul').hide();
 	$('.autres_articles').hide();
@@ -27,11 +27,35 @@ $(document).ready(function(){
 	});
 
 	$('.onglet_activites').focusout(function(){
-		$('.sous_menu').slideToggle(100);
+		$('.sous_menu').slideToggle(50);
 	});
 
-	// SIDEBAR ACTIVITES ET NEWS
+	// SOUS MENU EN GROUPE
+	$('.choix_groupe').click(function(){
+		$('.sous_menu_groupe').slideToggle(1);
+	});
 
+	$('.choix_groupe').focusout(function(){
+		$('.sous_menu_groupe').slideToggle(1);
+		$('.activites_container .filtre_dates').css('top','-97px');
+	});
+
+	var $menuG = $('.sous_menu_groupe');
+
+	$menuG.find('span').on('click', function() {
+		var opened= !!$menuG.data('opened');
+		if(opened) {
+			$('span i').removeClass('fa-angle-down').addClass('fa-angle-up');
+		} else {
+			$('span i').removeClass('fa-angle-up').addClass('fa-angle-down');
+		}
+	$menuG.data('opened', !opened);
+	});
+
+
+
+
+	// SIDEBAR ACTIVITES ET NEWS
 	$(window).scroll(function(){
 
 	    $(".sidebar").css("top",Math.max(115,536-$(this).scrollTop()));
@@ -71,7 +95,6 @@ $(document).ready(function(){
 	
 
 	// SIDEBAR ARCHIVES MOIS
-
 	$('.arch_2016 a').click(function(){
 		$('.autres_articles').slideUp(250);
 		$('.arch_2016 ul').slideToggle(250);
@@ -90,7 +113,6 @@ $(document).ready(function(){
 	});
 
 	// FORMULAIRE
-
 	$('#envoyer').click(function(){
 		valid = true;
 		if($('#name').val() == ''){
@@ -124,6 +146,4 @@ $(document).ready(function(){
 		};
 		return valid;
 	});
-
-
 });
