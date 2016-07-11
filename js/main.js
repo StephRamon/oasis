@@ -43,7 +43,7 @@ $(document).ready(function(){
 	var $menuG = $('.sous_menu_groupe');
 
 	$menuG.find('span').on('click', function() {
-		var opened= !!$menuG.data('opened');
+		var opened= !$menuG.data('opened');
 		if(opened) {
 			$('span i').removeClass('fa-angle-down').addClass('fa-angle-up');
 		} else {

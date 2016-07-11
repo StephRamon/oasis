@@ -539,6 +539,7 @@ h5 {
 			float: left;
 			height: 30px;
 			line-height: 30px;
+			width: 160px;
 			background-color: #ccd500;
 			border-radius: 15px;
 			padding: 0 15px;
@@ -547,16 +548,19 @@ h5 {
 			z-index: 5;
 		}
 
+		.toutes_activites {
+			width: 170px !important;
+		}
+
 		.sous_menu_groupe {
-			display: block;
 			position: relative;
-			top: 4px;
-			left: 164px;
+			top: 0;
+			left: 0;
 			margin: 0;
 			padding: 0;
 			list-style: none;
 			width: 130px;
-			border-radius: 15px 15px 0 0;
+			/*border-radius: 15px 15px 0 0;*/
 			background-color: #fff;
 			z-index: 2;
 		}
@@ -576,10 +580,11 @@ h5 {
 
 		.activites_container .filtre_dates {
 			float: right;
-			position: relative;
-			top: 0;
+			/*position: relative;
+			top: 0;*/
 			background-color: #c3c3c3;
 			margin-right: 7px;
+			width: 175px;
 		}
 		.prochaines_activites {
 			margin-top: 150px;
