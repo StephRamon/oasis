@@ -190,6 +190,10 @@ h5 {
 			nav ul li a:hover {
 				color: #ccd500;
 				padding-bottom: 15px;
+
+				-webkit-transition: color 500ms;
+				-o-transition: color 500ms;
+				transition: color 500ms;
 			}
 
 			.active {
@@ -204,17 +208,15 @@ h5 {
 			width: 123px;
 			height: 35px;
 			border-radius: 20px;
-			color: white;
+			color: #fff;
 			font-weight: bold;
 			text-align: center;
 			line-height: 35px;
 			}
 
 			.aider:hover{
-				color: white;
-				padding-bottom: 0px;
-				border-bottom: 0px solid #ccd500;
-				background-color: rgba(239, 85, 9, 0.5);
+				background-color: rgba(239,85,9,0.7);
+				color: #fff;
 			}
 
 				.sous_menu{
@@ -293,21 +295,30 @@ h5 {
 
 		.cta_inscrire {
 			position: relative;
-			top: -25px;
-			background-color: #ccd500;
-			padding: 10px 25px 10px 25px;
+			top: -35px;
+			/*background-color: #ccd500;*/
+			/*padding: 10px 25px 10px 25px;*/
 			border-radius: 20px;
 		}
 
 		.cta_inscrire a {
+			display: inline-block;
 			color: #fff;
 			text-decoration: none;
 			text-transform: uppercase;
 			font-weight: bold;
+			padding: 10px 30px;
+			border-radius: 20px;
+			background-color: #ccd500;
+
+			-webkit-transition: background-color 1000ms;
+			-o-transition: background-color 1000ms;
+			transition: background-color 1000ms;
+
 		}
 
-		.cta_inscrire:hover{
-			padding: 11px 26px 11px 26px;
+		.cta_inscrire a:hover{
+			background-color: #00893a;
 		}
 
 		.before_next span a {
@@ -362,6 +373,10 @@ h5 {
 			border-radius: 4px;
 			border: 1px solid #333;
 			background-color: rgba(0, 0, 0, 0.1);
+
+			-webkit-transition: background-color 1000ms;
+			-o-transition: background-color 1000ms;
+			transition: background-color 1000ms;
 		}
 
 		.slider_nav li a:hover {
@@ -1420,6 +1435,10 @@ h5 {
 		height: auto;
 		margin: 0 auto;
 		margin-bottom: 50px;
+	}
+
+	.formulaire h1{
+		text-align: center;
 	}
 
 	.formulaire form{
