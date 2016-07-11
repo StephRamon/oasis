@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 	$('.sous_menu').hide();
+	// $('.sous_menu_groupe').hide();
 	$('.headform').hide();
 	$('.archives li ul').hide();
 	$('.autres_articles').hide();

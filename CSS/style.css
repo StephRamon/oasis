@@ -201,24 +201,7 @@ h5 {
 				padding-bottom: 15px;
 				border-bottom: 1px solid #ccd500;
 			}
-
-			.aider {
-			display: inline-block;
-			background-color: #ef5509;
-			width: 123px;
-			height: 35px;
-			border-radius: 20px;
-			color: #fff;
-			font-weight: bold;
-			text-align: center;
-			line-height: 35px;
-			}
-
-			.aider:hover{
-				background-color: rgba(239,85,9,0.7);
-				color: #fff;
-			}
-
+			
 				.sous_menu{
 					display: block;
 					position: absolute;
@@ -248,6 +231,25 @@ h5 {
 				.sous_menu li:hover{
 					background-color: #ccd500;
 				}
+
+			.aider {
+			display: inline-block;
+			background-color: #ef5509;
+			width: 123px;
+			height: 35px;
+			border-radius: 20px;
+			color: #fff;
+			font-weight: bold;
+			text-align: center;
+			line-height: 35px;
+			}
+
+			.aider:hover{
+				background-color: rgba(239,85,9,0.7);
+				color: #fff;
+			}
+
+				
 
 
 	/* ------------------------ SLIDER ------------------------ */
@@ -541,6 +543,22 @@ h5 {
 			padding: 0 15px;
 			color: #fff;
 			margin-right: 0.2%;
+		}
+
+		.sous_menu_groupe {
+			display: block;
+			margin: 0;
+			padding: 0;
+			padding-left: 16px;
+			list-style: none;
+			width: 131px;
+			position: relative;
+			top: 0;
+			left: 164px;
+		}
+
+		.sous_menu_groupe a{
+			text-decoration: none;
 		}
 
 		.activites_container .filtre_dates {
