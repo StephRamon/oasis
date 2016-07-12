@@ -2,66 +2,59 @@ $(document).ready(function(){
 
 	$('.sous_menu').hide();
 	$('.sous_menu_groupe').hide();
-	$('.filtre_types').hide();
+	$('.sous_menu_filtre').hide();
 	$('.headform').hide();
 	$('.archives li ul').hide();
 	$('.autres_articles').hide();
     
 	// MENU HAMBURGER
-
 	$('.menu_hamburger').click(function(){
-
 		$('nav').toggleClass('menu_burger');	
 	});
 
 
 	// CHAMPS DE RECHERCHE
-
 	$('.fa-search').click(function(){
 		$('.headform').toggle();
 	});
 
 	// SOUS MENU ACTIVITES
-
-	$('.onglet_activites').click(function(){
-		$('.sous_menu').slideToggle(50);
+	$('.onglet_activites').hover(function(){
+		$('.sous_menu').slideToggle(1);
 	});
 
-	$('.onglet_activites').focusout(function(){
-		$('.sous_menu').slideToggle(50);
-	});
+	// $('.onglet_activites').focusout(function(){
+	// 	$('.sous_menu').toggle(50);
+	// });
 
 	// SOUS MENU EN GROUPE
-	$('.choix_groupe').click(function(){
+	$('.choix_groupe').hover(function(){
 		$('.sous_menu_groupe').slideToggle(1);
 	});
 
-	$('.choix_groupe').focusout(function(){
-		$('.sous_menu_groupe').slideToggle(1);
-		$('.activites_container .filtre_dates').css('top','-97px');
-	});
+	// $('.choix_groupe').focusout(function(){
+	// 	$('.sous_menu_groupe').toggle(1);
+	// });
 
-	var $menuG = $('.sous_menu_groupe');
-
-	$menuG.find('span').on('click', function() {
-		var opened= !$menuG.data('opened');
-		if(opened) {
-			$('span i').removeClass('fa-angle-down').addClass('fa-angle-up');
-		} else {
-			$('span i').removeClass('fa-angle-up').addClass('fa-angle-down');
-		}
-	$menuG.data('opened', !opened);
-	});
+	// var $menuG = $('.sous_menu_groupe');
+	// $menuG.find('span').on('click', function() {
+	// 	var opened= !$menuG.data('opened');
+	// 	if(opened) {
+	// 		$('span i').removeClass('fa-angle-down').addClass('fa-angle-up');
+	// 	} else {
+	// 		$('span i').removeClass('fa-angle-up').addClass('fa-angle-down');
+	// 	}
+	// $menuG.data('opened', !opened);
+	// });
 
 	// FILTRE PAR DATES OU PAR TYPES
-	$('.filtre_dates').click(function(){
-		$('.filtre_types').slideToggle(1);
+	$('.filtre').hover(function(){
+		$('.sous_menu_filtre').slideToggle(1);
 	});
 
 
 	// SIDEBAR ACTIVITES ET NEWS
 	$(window).scroll(function(){
-
 	    $(".sidebar").css("top",Math.max(115,536-$(this).scrollTop()));
 	    $(".blogsidebar").css("top",Math.max(115,150-$(this).scrollTop()));
 	});
@@ -69,7 +62,6 @@ $(document).ready(function(){
 
 	var $onglet = $('.sidebar');
 	var $ongletBlog = $('.blogsidebar');
-
 	$onglet.find('span').on('click',function() {
 	    var opened = !!$onglet.data('opened');
 	    if(opened) {

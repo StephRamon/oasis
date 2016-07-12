@@ -579,26 +579,29 @@ h5 {
 			color: #fff;
 		}
 
-		.activites_container .filtre_dates {
+		.activites_container .filtre {
 			float: right;
 			background-color: #c3c3c3;
 			margin-right: 7px;
 			width: 250px;
 		}
 
-		.filtre_types {
+		.sous_menu_filtre {
 			list-style: none;
 			color: #000;
-			background-color: #fff;
 			width: 220px;
 			margin: 0;
 			padding: 0;
-			padding-left: 16px;
 			position: relative;
 			left: 1px;
 		}
 
-		.filtre_types:hover {
+		.filtre_types, .filtre_dates {
+			background-color: #fff;
+			padding-left: 16px;
+		}
+
+		.filtre_types:hover, .filtre_dates:hover {
 			background-color: #d7bea3;
 			color: #fff;
 		}
@@ -631,7 +634,7 @@ h5 {
 		}
 
 		.activites_container i {
-			padding-left: 97px;
+			padding-left: 78px;
 			color: #333;
 		}
 
