@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$('.sous_menu').hide();
 	$('.sous_menu_groupe').hide();
 	$('.sous_menu_filtre').hide();
+	// $('.sous_menu_mois').hide();
 	$('.headform').hide();
 	$('.archives li ul').hide();
 	$('.autres_articles').hide();
@@ -50,6 +51,11 @@ $(document).ready(function(){
 	// FILTRE PAR DATES OU PAR TYPES
 	$('.filtre').hover(function(){
 		$('.sous_menu_filtre').slideToggle(1);
+	});
+
+	// SOUS-MENU MOIS - PAGE AGENDA
+	$('.mois_en_cours').click(function(){
+		$('.sous_menu_mois').slideToggle(1);
 	});
 
 

@@ -921,12 +921,6 @@ h5 {
 		height: 115px
 	}
 
-	.sous_menu_mois {
-		display: block;
-		position: absolute;
-		min-width: 115px;
-	}
-
 	.calendar table {
 		border-collapse: separate;
 		width: 100%;
@@ -935,22 +929,50 @@ h5 {
 	.calendar caption {
 		text-align: left;
 	}
+	
+	caption ul {
+	list-style: none;
+	cursor: pointer;
+	}
 
-	.calendar caption li .mois_en_cours {
+	.mois_en_cours {
 		display: inline-block;
 		height: 30px;
+		width: 150px;
 		line-height: 30px;
 		border-radius: 15px;
-		padding: 0 15px 0 15px;
+		padding: 0 15px;
 		background-color: #ccd500;
 		text-decoration: none;
 		color: #fff;
 		text-transform: uppercase;
 	}
 
+	.mois_en_cours i {
+		padding-left: 16px;
+	}
+
 	.sous_menu_mois {
+		display: block;
+		position: absolute;
+		min-width: 115px;
 		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 50px;
 		color: #c3c3c3;
+		text-transform: lowercase;
+		background-color: #fff;
+	}
+
+	.sous_menu-mois li {
+		background-color: #fff;
+		padding-left: 15px;
+	}
+
+	.sous_menu_mois li:hover{
+		background-color: #d7bea3;
+		color: #fff;
 	}
 
 	.calendar th, td {
