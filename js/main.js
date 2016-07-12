@@ -61,21 +61,31 @@ $(document).ready(function(){
 
 
 	var $onglet = $('.sidebar');
+	var $articles = $('.liste_articles');
+	var $text = $('.texte_article');
 	var $ongletBlog = $('.blogsidebar');
+
 	$onglet.find('span').on('click',function() {
 	    var opened = !!$onglet.data('opened');
-	    if(opened) {
-	        $onglet.animate({ left: 0 });
-	        $('span i').removeClass("fa-angle-right").addClass("fa-angle-left");
-	    } else {
-	        $onglet.animate({ left: -221 });
-	        $('span i').removeClass("fa-angle-left").addClass("fa-angle-right");
-    	}
+
+
+	    if (window.innerWidth>1200 || window.innerWidth<945) {
+		    if(opened) {
+		        $onglet.animate({ left: 0 });
+		        $articles.animate({marginLeft: 245});
+		        // $text.animate({maxWidth: 50%});
+		        $('span i').removeClass("fa-angle-right").addClass("fa-angle-left");
+		    } else {
+		        $onglet.animate({ left: -221 });
+		        $articles.animate({marginLeft: 95});
+		        // $text.animate({maxWidth: 56%});
+		        $('span i').removeClass("fa-angle-left").addClass("fa-angle-right");
+	    	}
+	    }
     $onglet.data('opened', !opened);
 	});
 
 	// SIDEBAR AUTRES ARTICLES
-
 	$('.titre_alim a').click(function(){
 		$('.alim').slideToggle(250);
 	});

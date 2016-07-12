@@ -1115,7 +1115,8 @@ h5 {
 
 	.liste_articles{
 		max-width: 1069px;
-		margin: 95px auto;
+		margin: 95px;
+		margin-left: 245px;
 	}
 	.plus_articles{
 		display: inline-block;
@@ -1171,8 +1172,9 @@ h5 {
 	}
 
 	.texte_article{
-		max-width: 608px;
-		float: right;
+		display: inline-block;
+		max-width: 45%;
+		
 	}
 
 	article span{
