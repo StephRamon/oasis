@@ -53,7 +53,10 @@ $(document).ready(function(){
 	$menuG.data('opened', !opened);
 	});
 
-
+	// FILTRE PAR DATES OU PAR TYPES
+	$('.filtre_dates').click(function(){
+		$('.filtre_types').slideToggle(1);
+	});
 
 
 	// SIDEBAR ACTIVITES ET NEWS

@@ -598,6 +598,11 @@ h5 {
 			left: 1px;
 		}
 
+		.filtre_types:hover {
+			background-color: #d7bea3;
+			color: #fff;
+		}
+
 		.prochaines_activites {
 			margin-top: 150px;
 		}
@@ -626,7 +631,7 @@ h5 {
 		}
 
 		.activites_container i {
-			padding-left: 20px;
+			padding-left: 97px;
 			color: #333;
 		}
 
