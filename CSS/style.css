@@ -922,7 +922,8 @@ h5 {
 	}
 
 	.sous_menu_mois {
-		display: none;
+		display: block;
+		position: absolute;
 		min-width: 115px;
 	}
 
@@ -935,7 +936,7 @@ h5 {
 		text-align: left;
 	}
 
-	.calendar caption a {
+	.calendar caption li .mois_en_cours {
 		display: inline-block;
 		height: 30px;
 		line-height: 30px;
@@ -945,6 +946,11 @@ h5 {
 		text-decoration: none;
 		color: #fff;
 		text-transform: uppercase;
+	}
+
+	.sous_menu_mois {
+		list-style: none;
+		color: #c3c3c3;
 	}
 
 	.calendar th, td {
