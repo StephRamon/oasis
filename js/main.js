@@ -64,26 +64,44 @@ $(document).ready(function(){
 	var $articles = $('.liste_articles');
 	var $text = $('.texte_article');
 	var $ongletBlog = $('.blogsidebar');
+	var $articlesBlog = $('.blogliste_articles');
 
 	$onglet.find('span').on('click',function() {
 	    var opened = !!$onglet.data('opened');
 
-
 	    if (window.innerWidth>1200 || window.innerWidth<945) {
 		    if(opened) {
-		        $onglet.animate({ left: 0 });
+		        $onglet.animate({left: 0});
 		        $articles.animate({marginLeft: 245});
-		        // $text.animate({maxWidth: 50%});
 		        $('span i').removeClass("fa-angle-right").addClass("fa-angle-left");
 		    } else {
-		        $onglet.animate({ left: -221 });
+		        $onglet.animate({left: -221});
 		        $articles.animate({marginLeft: 95});
-		        // $text.animate({maxWidth: 56%});
 		        $('span i').removeClass("fa-angle-left").addClass("fa-angle-right");
 	    	}
 	    }
     $onglet.data('opened', !opened);
 	});
+
+	$ongletBlog.find('span').on('click',function() {
+	    var opened = !!$ongletBlog.data('opened');
+
+	    if (window.innerWidth>1200 || window.innerWidth<945) {
+		    if(!opened) {
+		        $ongletBlog.animate({left: 0});
+		        $articlesBlog.animate({marginLeft: 245});
+		        $('span i').removeClass("fa-angle-right").addClass("fa-angle-left");
+		    } else {
+		        $ongletBlog.animate({ left: -221 });
+		        $articles.animate({marginLeft: 95});
+		        $('span i').removeClass("fa-angle-left").addClass("fa-angle-right");
+	    	}
+	    }
+    $ongletBlog.data('opened', !opened);
+	});
+
+
+
 
 	// SIDEBAR AUTRES ARTICLES
 	$('.titre_alim a').click(function(){
